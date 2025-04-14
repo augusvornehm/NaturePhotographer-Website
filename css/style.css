@@ -1177,10 +1177,31 @@ footer {
     max-width: 50%;
 }
 
-.about-my-work-image img {
-    width: 300px;
+/* .about-my-work-image img {
+    width: 500px;
+    height: auto;
+    border: 5px solid #ddd;
+    border-radius: 6px;
+    
+} */
+
+.polaroid {
+    background-color: #fff;
+    padding: 1rem 1rem 3rem;
+}
+
+.polaroid img {
+    width: 500px;
     height: auto;
 }
+
+.polaroid p {
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
 
 /* Media Queries for Mobile Devices */
 @media screen and (max-width: 768px) {
