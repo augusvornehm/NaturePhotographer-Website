@@ -1,0 +1,1915 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden; /*prevent horizontal scrolling */
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0; /*needs to be 0 for project section, all others 5rem 10%*/
+    box-sizing: border-box;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #040615, #050816);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 5%;
+    color: white;
+    position: relative;
+    width: 100%; 
+    z-index: 1000; /* keeps it on top of others*/
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 5%;
+    position: fixed; /*keeps nav fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /*keeps it above other content */
+    box-sizing: border-box;
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    margin-left: auto; /*pushes navigation list items to the right */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: right;
+    position: relative;
+}
+
+nav ul li a::after { /*line on hover*/
+    content: '';
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+    width: 0%;
+    height: 3px; /* thickness of the line on hover*/
+    background-color: #9a6afc;
+    visibility: hidden; /* hide the line initially beforte hover*/
+    transform: translateX(-10px); /*slightly shift line to the left */
+    transition: width 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
+}
+
+nav ul li a:hover::after {
+    visibility: visible; /*show the line on hover */
+    width: 100%;
+    transform: translateX(-10px); /*keep shift to left*/
+    transition: width 0.3s ease, transform 0.3s ease;
+}
+
+/* Burger Menu */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+/* Default: Hide the nav menu off-screen */
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full screen width */
+    height: 100%; /* Full screen height */
+    background-color: black; /* Solid black background */
+    color: white; /* Menu text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align to the top left */
+    align-items: flex-start; /* Left align content */
+    padding: 2rem;
+    opacity: 0; /* Initially invisible */
+    visibility: hidden; /* Prevent interaction when hidden */
+    transition: opacity 0.3s ease, visibility 0s 0.3s; /* Fade in/out effect */
+    z-index: 9999; /* Ensure it is on top */
+}
+
+/* Show the menu when burger menu is clicked */
+.menu-container.show-menu {
+    opacity: 1; /* Make the menu visible */
+    visibility: visible; /* Allow interaction */
+    transition: opacity 0.3s ease, visibility 0s; /* Fade in effect */
+}
+
+/* Nav menu inside the full-screen pop-up */
+.nav-menu {
+    width: 100%;
+    text-align: left; /* Left-align text */
+    margin-top: 10%; /* Move the list down inside the menu */
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Left-align items */
+    font-weight: bold;
+    text-align: left; /* Left align text */
+    padding-left:10%;
+    padding-top: 10%;
+}
+
+.nav-menu ul li {
+    margin-bottom: 1.5rem;
+}
+
+/* Close the menu when the user clicks outside */
+.menu-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Darkened background behind menu */
+    z-index: -1; /* Behind the menu */
+}
+
+
+
+
+
+
+/* Phone Layout - Adjustments for screens up to 768px */
+@media screen and (max-width: 600px) {
+
+    /* Hide the regular navigation list on smaller devices */
+    nav ul {
+        display: none; /* Hide the navigation list by default */
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    /* Show the burger menu icon */
+    
+    
+
+    /* Style the burger icon */
+    .burger-icon {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
+    }
+
+    /* When the nav list is active, show the menu */
+    nav ul.active {
+        display: flex; /* Show the menu when active */
+    }
+}
+
+
+h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    text-shadow: 1px 8px 20px #202955; /*horizontal offset & vertical offset (more downward), blur radius, color of shadow*/
+    margin-bottom: 2.5rem;
+}
+
+h1 span {
+    color: #ff7300;
+}
+
+h2 {
+    font-size: 5rem;
+    color: #fff;
+    margin-bottom: 2.5rem;
+    margin-top: 1%;
+    text-shadow: 1px 5px 15px #202955; /*horizontal offset, vertical offset (more down), blur radius, color of shadow*/
+}
+
+p {
+    font-size: 1.15rem;
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+}
+
+.text {
+    flex: 1;
+    font-weight: bold;
+    margin: 0;
+    align-self: stretch; /*text container stretch vertically */
+}
+
+.image {
+    flex: 1;
+    text-align: left;
+    margin: 0;
+    display: flex;
+    align-items: top; /* vertically center image */
+}
+
+.pretitle {
+    font-size: 1.5rem;
+    color: #ff7300;
+    margin: 0;
+    padding: 0;
+    align-self: baseline;
+    align-items: end;
+    text-align: end;
+    text-transform: lowercase;
+    font-family: 'Courier Prime', monospace;
+}
+
+
+/* Buttons */
+button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #ff7300;
+    color: rgb(234, 234, 234);
+    text-decoration: none;
+    border-radius: 5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.15rem;
+    border: none;
+}
+
+button:hover {
+    background-color: #9a6afc;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #ff7300;
+    color: rgb(234, 234, 234);
+    text-decoration: none;
+    border-radius: 5rem;
+    text-align: center;
+    font-weight: bold;
+    width: fit-content;
+    font-size: 1.15rem;
+    border: none;
+    font-style: none;
+}
+
+.btn:hover {
+    background-color: #9a6afc;
+    color: #fff;
+}
+
+/* Section overall adjustments */
+
+.hero {
+    display: flex;
+    justify-content: center; /*center horizontally */
+    align-items: center; /*center vertically*/
+    padding: 0 10%;
+    max-width: 80vw;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.hero .text {
+    text-align: left;
+    width: 100%; 
+}
+
+
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 5rem 10%;
+    max-width: 100vw;
+        margin: 0;
+}
+
+.work, .projects, .software_skills {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; /*align items left */
+    padding: 5rem 10%;
+    max-width: 100vw;
+    margin: 0;
+}
+
+.content-left {
+    width: 55%;
+    flex: 1; /*take all available space*/
+}
+
+/* Desktop layout - 3 Columns, 2 Rows */
+
+.content-right {
+    flex: 1;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100%;
+    padding: none;
+    position: relative; 
+}
+
+
+/*tablet layout - 2 Columns, 3 Rows */
+@media screen and (max-width: 1425px) {
+    .content-right {
+       width: 0;
+    }
+}
+
+/* phone layout - 1 Column, 6 Rows */
+@media screen and (max-width: 600px) {
+    .content-right {
+       width: 0;
+    }
+}
+
+/*hero section*/
+
+#index {
+    color: white;
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-weight: bolder;
+    margin-left: 0;
+}
+
+/*about section*/
+
+
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    font-size: 1.15rem;
+}
+
+.skills li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.education-container {
+    display: flex; /*two columns */
+    padding: 0;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.cap {
+    display: flex;
+    flex-direction: column; /*stack vertically*/
+    justify-content: flex-start; 
+    margin-right: 6rem; /*space between cap img and edu list*/
+    align-self: center; /*center horizontally*/
+}
+
+.cap img {
+    width: 150px;
+    height: auto;
+}
+
+.education {
+    display: flex;
+    flex-direction: column; /* edu items vertically */
+    list-style: none; /*no bullet points*/
+    margin: 0;
+    padding: 0;
+}
+
+.education li {
+    margin-bottom: 1rem;
+}
+
+.education_text {
+    font-size: 1rem;
+}
+
+.education_text strong {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1425px) {
+    .education-container {
+        flex-direction: row; /* Keep columns side by side on tablet */
+        align-items: center; /* Center the content vertically */
+    }
+
+    .cap {
+        margin-right: 2rem; /* Adjust spacing between cap image and education */
+        width: 50%;
+    }
+    
+    .cap img {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .education {
+        margin-left: auto; /* Push the education section to the right */
+        text-align: left; /* Ensure the text is left aligned */
+    }
+
+    .education li {
+        margin-bottom: 1.5rem; /* Add some extra spacing between list items */
+    }
+}
+
+
+/* Mobile Layout - Adjustments for screens up to 768px */
+@media screen and (max-width: 600px) {
+    .education-container {
+        flex-direction: column; /* Stack columns vertically on mobile */
+        align-items: center; /* Center the content */
+        margin-top: 3rem;
+    }
+
+    .cap {
+        align-self: center; /* Center the cap image */
+        align-content: center;
+    }
+
+    .cap img {
+        width: 12rem; /* Reduce the image size for smaller screens */
+    }
+
+    .education {
+        margin-top: 1.5rem; /* Add some space between the image and education list */
+    }
+
+    .education_text {
+        font-size: 0.9rem; /* Reduce text size for smaller screens */
+    }
+
+    .education li {
+        margin-bottom: 1.2rem; /* Slightly adjust spacing between list items */
+    }
+}
+/* work overview section */
+
+
+.work-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*columns at least 300px width */
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.box {
+    background-color: white;
+    color: black;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    max-width: 20rem;
+    height: 25rem;
+    align-items: center;
+    justify-content: center;
+    border-left: 5px solid #9a6afc;
+}
+
+.box img {
+    max-width: auto;
+    height: 35%;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+    .work-overview {
+        display: flex;
+        flex-direction: column; /* Align items in a column */
+        align-items: center;    /* Center the items horizontally */
+        justify-content: center; /* Center the items vertically */
+    }
+}
+
+
+img {
+    width: 100%;
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    list-style: none;
+    margin: 0;
+}
+
+.skills li {
+    display: flex;
+    margin: - 0; /* Reduce the margin between rows (half of previous value) */
+}
+
+
+/* Software skills section */
+
+
+.software {
+    z-index: 1000;
+}
+
+
+/* Project Section*/
+.projects {
+  width: 100vw;
+  overflow: hidden;
+  padding: 5rem 0;
+  position: relative;
+}
+
+.projects h2 {
+    align-items: left;
+    padding: 0 10%;
+    max-width: 100vw;
+}
+
+.projects span {
+    padding: 0 10%;
+}
+
+.projects-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.projects-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 2rem 40%; /* more padding to allow more room for scrolling to end/beginning*/
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  width: calc(100% + 80%); /* More space for the scroll to end/beginning*/
+  height: 100wv;
+}
+
+    /*hide ugly scrollbar in chrome, safari */
+.projects-container::-webkit-scrollbar {
+  display: none;
+}
+
+.project-box {
+  flex: 0 0 20rem;
+  height: 25rem;
+  background-color: white;
+  color: black;
+  ;
+  border-radius: 2.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  border-left: 5px solid #9a6afc;
+  scroll-snap-align: center;
+  transform: scale(0.9);
+}
+
+.project-box.active {
+  transform: scale(1);
+}
+
+.project-box:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-box img {
+  max-width: 100%;
+  height: 35%;
+}
+
+.project-box-start {
+    color: transparent;
+    background-color: transparent ;
+}
+
+    /*extra margin to make edge boxes partially visible*/
+.project-box:first-child {
+  margin-left: -15rem; /*increased margin for first box*/
+}
+
+.project-box:last-child {
+  margin-right: -15rem; /* increased margin last box*/
+}
+
+    /*arrow button style*/
+.arrow-btn {
+  position: absolute;
+  bottom: 0;
+  background-color: #ff7300;
+  padding: 1rem 1.2rem;
+  border-radius: 100%;
+  border: none;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.arrow-btn:hover {
+  background-color: #9a6afc;
+}
+
+.arrow-btn:active {
+    transform: scale(0.9);
+}
+
+.left-arrow {
+  left: 42%; /* Position to the left */
+}
+
+.right-arrow {
+  right: 42%; /* Position to the right */
+}
+
+
+
+/* contct page*/
+.contact-page-form {
+    display: flex;
+    flex-direction: column; /*stack elements vertically */
+    gap: 1rem;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+    /*only bottom border*/
+.contact-page-form input,
+.contact-page-form textarea {
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 2px solid #fff;
+}
+
+    /*radio buttons and checkboxes */
+.contact-page-form label {
+    display: block;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-content: flex-start;
+}
+
+
+.contact-page-form legend {
+    font-weight: normal; 
+    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
+}
+
+select {
+    padding: 5%;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25rem; /* 550px */
+    background-color: #171E40;
+    color: white;
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo span {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.footer-logo .circle {
+    width: 3rem;
+    height: 3rem;
+    background-color: #ff7300;
+    border-radius: 50%;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.footer-nav a::after { /*line on hover*/
+    content: '';
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+    width: 0%;
+    height: 3px; /* thickness of the line on hover*/
+    background-color: #9a6afc;
+    visibility: hidden; /* hide the line initially beforte hover*/
+    transform: translateX(-10px); /*slightly shift line to the left */
+    transition: width 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
+}
+
+.footer-nav a:hover::after {
+    visibility: visible; /*show the line on hover */
+    width: 100%;
+    transform: translateX(-10px); /*keep shift to left*/
+    transition: width 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.social-icons img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.footer-bottom {
+    height: 2.5rem;
+    background-color: #0B112E;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+#instagram img:hover {
+    content: url("../assets/images/instagram_hover.png");
+}
+
+#git img:hover {
+    content: url("../assets/images/git_hover.png");
+}
+
+#linkedin img:hover {
+    content: url("../assets/images/linkedin_hover.png");
+}
+
+
+
+/* Tablet Layout - Adjustments for screens up to 1225px */
+@media screen and (max-width: 1425px) {
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 3.5rem;
+    }
+    
+       .hero {
+        padding: 2rem 5%;
+        min-height: auto;
+    }
+    
+    .hero .text {
+        text-align: left;
+    }
+    
+    .about, .work, .projects, .software_skills, #home, .hero {
+        padding: 3rem 10%;
+    }
+
+    
+    .content-right {
+        width: 0% !important;
+        display: none;
+    }
+    
+    .content-left {
+        width: 100% !important; /* Expand left content */
+    }
+    
+    .projects-container {
+        padding: 2rem 20%;
+        width: calc(100% + 40%);
+    }
+    
+    .left-arrow {
+        display: none;
+    }
+    
+    .right-arrow {
+        display: none;
+    }
+    
+    .footer-nav, .social-icons {
+        flex-direction: row; /* Changed from column to row */
+        justify-content: center; /* Center the icons */
+        align-items: center; /* Center vertically */
+        gap: 1rem;
+    }
+    
+    /* Fix the footer logo position */
+    .footer-logo {
+        margin-top: 0; /* Adjust logo's margin to stay inside the footer */
+        padding-top: 0; /* Ensure no overflow outside the footer */
+    }
+    
+}
+
+/* Phone Layout - Adjustments for screens up to 768px */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    .hero {
+        padding: 2rem 5%;
+        min-height: auto;
+    }
+    
+    .hero .text {
+        text-align: left;
+    }
+    
+    .about, .work, .projects, .software_skills, #home, .hero {
+        padding: 3rem 10%;
+    }
+    
+    .content-right {
+        display: none !important;
+        width: 0% !important;
+    }
+    
+    .content-left {
+        width: 100% !important; /* Expand left content */
+    }
+    
+    .projects-container {
+        padding: 1rem 10%;
+        width: calc(100% + 20%);
+        align-content: center;
+        align-items: center;
+        align-self: center;
+    }
+    
+    .contact-page-form {
+        width: 90%; /* Make the form 80% wide */
+        margin: 0 ; /* Center the form horizontally */
+    }
+    
+    .left-arrow, .right-arrow {
+        display: none;
+    }
+    
+    .footer-nav, .social-icons {
+        flex-direction: row; /* Changed from column to row */
+        justify-content: center; /* Center the icons */
+        align-items: center; /* Center vertically */
+        gap: 1rem;
+    }
+    
+    /* Fix the footer logo position */
+    .footer-logo {
+        margin-top: 0; /* Adjust logo's margin to stay inside the footer */
+        padding-top: 0; /* Ensure no overflow outside the footer */
+    }
+    
+    /* Burger Menu */
+    /* Burger Menu Button */
+    .burger-menu {
+        display: block !important; /* Ensure burger menu is visible */
+        position: fixed; /* Position it correctly if needed */
+        right: 2rem; /* Adjust based on your layout */
+        z-index: 10000; /* Ensure it's above other content */
+        color: white;
+        font-size: 4rem; /* Double the font size (from 2rem to 4rem) */
+        width: 60px; /* Adjust width to make it bigger */
+        height: 60px; /* Adjust height to make it bigger */
+        border: none; /* Remove any border */
+        outline: none; /* Remove any outline */
+        box-shadow: none; /* Remove any box shadow */
+        background: transparent; /* Make background transparent */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .burger-menu .burger-icon {
+        font-size: 4rem; /* Double the font size for the icon */
+    }
+
+
+}
+
+
+
+
+/*portfolio*/
+
+.blackbackground {
+    background: linear-gradient(to bottom, #000, #040615);
+}
+
+/* Hero Section portfolio*/
+.hero-portfolio {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+#hero-title-outline-1 {
+    position: absolute;
+    top: 1.5rem;
+    right: 10%;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: right;
+    font-size: 12rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px white; /* white outline og title*/
+    position: absolute;
+    z-index: 2; /*behind the main text */
+}
+
+#hero-title-outline-2 {
+    position: absolute;
+    top: 7rem;
+    right: 1%;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: right;
+    font-size: 12rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px white;/* white outline og title*/
+    position: absolute;
+    z-index: 1;  /*behind the main text */
+}
+
+.hero-title {
+    position: absolute;
+    top: 10rem;
+    right: 10%;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: right;
+    font-size: 12rem;
+    align-items: flex-start;
+    align-self: flex-start;
+    margin-top: 0;
+    top: 10%;
+    right: 5%;
+    z-index: 5;
+}
+
+.hero-menu {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 35%;
+    z-index: 10;
+}
+
+    /*menu in portfolio to skills*/
+.hero-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-top: auto;
+}
+
+.hero-menu ul li a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero-menu ul li a strong {
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+/* menu styling for list items*/
+.hero-menu li {
+    font-size: 1.5rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+
+.hero-menu a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.hero-menu a span {
+    font-weight: bold;
+    margin-right: 1.5rem;
+}
+
+.hero-menu a:hover {
+    color: #ff7300;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 1525px) {
+        #hero-title-outline-1, 
+    .hero-title {
+        width: 80%;
+    }
+
+    .hero-title {
+        font-size: 10rem !important;
+        top: 5rem !important;
+    }
+    
+     #hero-title-outline-1 {
+        font-size: 9rem !important;
+        top: 5rem !important;
+    }
+    
+    #hero-title-outline-2 {
+        font-size: 9rem !important;
+        top: 11rem !important;
+    }
+
+    .hero-menu {
+        width: 50%; /* Adjust menu width */
+        left: 5%;
+    }
+
+    .hero-menu ul li a strong {
+        font-size: 1.5rem;
+    }
+
+    .hero-menu li {
+        font-size: 1.2rem;
+    }
+
+    .hero-menu a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Further adjustments for tablets */
+@media (max-width: 600px) {
+    .hero-portfolio {
+        align-items: left;
+        padding-top: 5rem;
+        padding: 0rem 10%;
+    }
+    
+    #hero-title-outline-1, 
+    .hero-title {
+        width: 80%;
+    }
+
+    .hero-title {
+        font-size: 5rem !important;
+        top: 5rem !important;
+    }
+    
+     #hero-title-outline-1 {
+        font-size: 4rem !important;
+        top: 5rem !important;
+    }
+    
+    #hero-title-outline-2 {
+        font-size: 4rem !important;
+        top: 7rem !important;
+    }
+
+    .hero-menu {
+        position: static;
+        transform: none;
+        width: 50%;
+        padding-top: 2rem;
+        text-align: left;
+        margin-top: 3rem;
+    }
+    
+    .hero-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }    
+
+    .hero-menu li {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+        text-align: left;
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+
+    .hero-menu a {
+        font-size: 1rem;
+        justify-content: left;
+    }
+}
+
+
+
+/* About Section */
+.about-my-work {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10%;
+}
+
+.about-my-work-text {
+    max-width: 50%;
+}
+
+.about-my-work-image img {
+    width: 300px;
+    height: auto;
+}
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .about-my-work {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 10%;
+    }
+
+    .about-my-work-image {
+        order: -1; /* Moves the image above the text */
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-my-work-image img {
+        width: 80%;
+        max-width: 250px; /* Ensures the image isn't too large */
+        height: auto;
+    }
+
+    .about-my-work-text {
+        max-width: 100%;
+        text-align: left; /* Keeps the text aligned to the left */
+    }
+}
+
+
+/* Testimonials */
+.testimonials {
+    text-align: left;
+    padding: 5rem 10%;
+}
+
+.testimonials-grid {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonial {
+    background: transparent;
+    padding: 1rem;
+    width: 50%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial p{
+    padding-top: 1.5rem;
+}
+
+.testimonial span{
+    padding: 0;
+    margin: 0;
+}
+
+/* ---- TABLETS (max-width: 768px) ---- */
+@media (max-width: 600px) {
+    .testimonials {
+        padding: 3rem 5%; /* Adjust padding for tablets */
+    }
+
+    .testimonials-grid {
+        flex-wrap: wrap; /* Allow wrapping of testimonials */
+        justify-content: center; /* Center testimonials */
+    }
+
+    .testimonial {
+        width: 48%; /* Adjust width for 2 items in a row */
+        margin-bottom: 1.5rem; /* Add space between testimonials */
+    }
+
+    .testimonial img {
+        width: 60px; /* Adjust image size for tablets */
+        height: 60px;
+    }
+
+    .testimonial p {
+        font-size: 1.2rem; /* Adjust text size for readability */
+    }
+}
+
+
+/* General contact section settings */
+.contact {
+    text-align: left;
+    padding: 5rem 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/* Contact form on the homepage */
+.contact#homepage-contact-form {
+    flex-wrap: wrap;
+    display: flex;
+    order: 1;
+}
+
+.contact#portfolio-contact .content-right table {
+    width: 100%; 
+}
+
+/* Flex properties for ensuring alignment in both sections */
+#homepage-contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    margin: 0;
+}
+
+input, textarea {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #fff;
+    color: #000;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+/*Web Dev*/
+
+#webdev .hero-title-portfolio-subpage .hero-main {
+    z-index: 10;
+    color: #fff;
+    font-size: 22rem;
+    line-height: 50%;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    font-weight: bold;
+    text-align: right;
+    font-weight: 700;
+}
+
+.hero-sub {
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    font-size: 22rem;
+    font-weight: bold;
+    text-align: right;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px white; /*white outline */
+    position: absolute;
+    z-index: 10;  /*behind the main text */
+}
+
+#sub-sub {
+    position: absolute;
+    top: 55%;
+    right: 15%;
+    font-size: 12rem;
+    font-weight: bold;
+    text-align: right;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px white; /*White outline */
+    position: absolute;
+    z-index: 1;  /*behind the main text */
+}
+
+#hero-title-number {
+    font-size: 50rem;
+    text-align: left;
+    position: absolute;
+    transform: translate(-30%, -35%);
+    color: rgba(255, 255, 255, 0.2);
+}
+
+/*Back arrow side portfolio*/
+
+.back-arrow {
+    position: fixed;
+    top: calc(50% - 3rem); /*account for the navbar */
+    left: 2.5rem;
+    width: 4rem;
+    height: auto;
+    z-index: 100;
+    transform: translateY(-50%); /*center vertically*/
+}
+
+.back-arrow svg {
+    width: 100%;
+    height: auto;
+    stroke: #fff;
+    transition: transform 0.3s ease, stroke 0.3s ease;
+}
+
+.back-arrow:hover svg {
+    transform: scale(1.2); /*larger, no shift*/
+    stroke: #ff7300; 
+}
+
+/* Portfolio section styling */
+.portfolio {
+    text-align: left;
+    padding: 5rem 10%;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.portfolio-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4; 
+    overflow: hidden;
+}
+
+/* Image styling */
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 1;
+}
+
+/* Image hover effect (turn black) */
+.portfolio-item:hover img {
+    transform: translateY(-8px);
+    filter: brightness(0) contrast(100%);
+}
+
+/* Overlay for text */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 2;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay h3,
+.overlay p {
+    color: #fff;
+    margin: 0;
+}
+
+.overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.overlay p {
+    font-size: 1rem;
+}
+
+
+/* Button */
+button .portfolio-piece-button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background: transparent;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0%;
+    transition: background 0.3s ease;
+}
+
+.portfolio-piece-button:hover {
+    background: #333;
+}
+
+/* Desktop layout - 3 Columns, 2 Rows */
+@media screen and (min-width: 1200px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        grid-template-rows: repeat(2, auto); /* 2 rows */
+    }
+}
+
+/*tablet layout - 2 Columns, 3 Rows */
+@media screen and (max-width: 1025px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-rows: repeat(3, auto); /* 3 rows */
+    }
+}
+
+/* phone layout - 1 Column, 6 Rows */
+@media screen and (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* 1 column */
+        grid-template-rows: repeat(6, auto); /* 6 rows */
+    }
+}
+
+/*images in portfolio skills sections*/
+.portfolio-piece-item {
+    position: relative;
+}
+
+.portfolio-piece-img {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;  /* Maintain the aspect ratio */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the rising effect */
+}
+
+/* Ensure that the image fills the container without stretching */
+.portfolio-piece-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hover effect: Image container rises */
+.portfolio-piece-item:hover .portfolio-piece-img {
+    transform: translateY(-8px);  /* Moves the image container upwards */
+}
+
+/*graphic images*/
+#portfolio-piece-item-graphic .portfolio-piece-img {
+    aspect-ratio: 1 / 1;
+}
+
+/* Illustrations */
+.portfolio-piece-item-illustrations{
+    position: relative;
+}
+
+.portfolio-piece-item-illustrations img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hover effect: Image container rises */
+.portfolio-piece-item:hover .portfolio-piece-img {
+    transform: translateY(-8px);  /* Moves the image container upwards */
+}
+
+
+    /* Popup styling */
+/* General Popup Styles */
+.show {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.show .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Image Pop-Up Container */
+.show .img-show {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10%;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Make the image larger in the pop-up (80% height) */
+.img-show img {
+    width: auto;  /* Width adjusts automatically */
+    height: 80vh; /* Set height to 80vh */
+    object-fit: contain; /* Ensures no distortion */
+}
+
+/* Close Button */
+.close-btn {
+    background: none;
+    border: none;
+    padding: 10px;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    cursor: pointer;
+    z-index: 999;
+    color: #ff7300;
+    font-size: 5rem;
+}
+
+.close-btn svg {
+    width: 5rem;
+    height: 5rem;
+    font-size: 15rem;
+    fill: none;
+}
+
+.close-btn:hover {
+    color: #9a6afc;
+}
+
+
+/* Case Study */
+
+#casestudy-hero {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 2.5rem 10% 0 10%;
+}
+
+#project-title h1 {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* Image stays at the top */
+.hero-portfolio .portfolio-content {
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Ensures the image is behind text */
+
+}
+
+.hero-portfolio img {
+    width: 100%;
+    height: 50vh; /* Image covers half of the section */
+    object-fit: cover; /* Ensures the image fills the area */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Keeps the image in the background */
+}
+
+/* Text section now BELOW the image */
+.project-hero-text-container {
+    height: 40vh; /* Remaining space */
+    width: 100%;
+    text-align: left;
+    padding: 2.5rem 10%;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2; /* Ensures text is above image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers text vertically */
+}
+
+.hero-text-container h1 {
+    margin-bottom: 1rem; /* Space between title and description */
+}
+
+.hero-text-container p {
+    margin-top: 0; /* Reset margin */
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 1425px) {
+    #casestudy-hero {
+        height: auto;
+        padding: 3rem 5%; /* Adjust padding for medium screens */
+    }
+
+    .hero-portfolio .portfolio-content {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center; /* Ensures images are centered */
+    }
+
+    .hero-portfolio img {
+        width: 100%;
+        height: 50vh; /* Adjust image height for medium screens */
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        display: block; /* Ensures the image behaves like a block element */
+        margin: 0 auto; /* Centers the image */
+    }
+
+    .project-hero-text-container {
+        height: auto;
+        padding: 2rem 5%; /* Adjust padding for medium screens */
+        margin-bottom: 0;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-text-container h1 {
+        font-size: 3.5rem; /* Adjust title size */
+        margin-bottom: 1rem;
+    }
+
+    .hero-text-container p {
+        font-size: 1.25rem;
+    }
+    .hero-portfolio {
+        padding-top: 5rem;
+        padding: 0rem 10%;
+    }
+
+    .hero-text-container {
+        text-align: left;
+        max-width: 80% !important;
+        padding: 2rem 5%;
+    }
+
+    .hero-title-portfolio-subpage {
+        font-size: 9rem !important; /* Match portfolio page */
+    }
+
+    .hero-main {
+        font-size: 11rem !important;
+        right: 5% !important;
+    }
+
+    .hero-sub {
+        font-size: 8rem !important;
+        top: 35% !important;
+        right: 10% !important;
+        max-width: 80%;
+    }
+
+    /* Hide back arrows */
+    .back-arrow {
+        display: none;
+    }
+}
+
+
+/* For Phones (max-width: 480px) */
+@media screen and (max-width: 600px) {
+    #casestudy-hero {
+        padding: 2rem 3%; /* Reduced padding for smaller screens */
+    }
+
+    .hero-portfolio .portfolio-content {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center; /* Ensures images are centered */
+    }
+
+    .hero-portfolio img {
+        height: 35vh; /* Further reduced image size for phones */
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        display: block; /* Ensures the image behaves like a block element */
+        margin: 0 auto; /* Centers the image */
+    }
+    #hero-title-number {
+        font-size: 32rem;
+        top: 0rem;
+        left: 1%;
+    }
+
+     .hero-portfolio {
+        padding-top: 5rem;
+        padding: 0rem 10%;
+    }
+
+    .hero-text-container {
+        text-align: left;
+        max-width: 80% !important;
+        padding: 2rem 5%;
+    }
+
+    .hero-title-portfolio-subpage {
+        font-size: 4.5rem !important; /* Match portfolio page */
+    }
+
+    .hero-main {
+        font-size: 6rem !important;
+        right: 5% !important;
+    }
+
+    .hero-sub {
+        font-size: 3.5rem !important;
+        top: 30% !important;
+        right: 10% !important;
+    }
+    /* Hide back arrows */
+    .back-arrow {
+        display: none;
+    }
+}
+
+/* Project details remain as they were */
+.project-detail {
+    text-align: left;
+    padding: 2.5rem 10%;
+}
+
+.portfolio-video {
+    width: auto;         
+    height: 60vh;       
+    object-fit: cover;   
+    overflow: hidden;   
+    display: block;  
+    position: relative; 
+    left: 50%;        
+    transform: translateX(-50%); /* Centers it perfectly */
+    padding-bottom: 5rem;
+}
+
+
+/*popup*/
+.image-grid {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.image-grid img {
+    width: 100px;  /* Adjust square size */
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.image-grid img:hover {
+    transform: scale(1.1);
+}
+
+/*3d*/
+
+model-viewer {
+    width: 100%;
+    height: 90%;
+    background-color: #ffffff;
+}
+
+.project-title span{
+    font-size: 1.15rem;
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+    padding: 0 10%;
+}
+
+
+/* Popup Styles */
+/* Grid layout for images in a single row */
+.image-row {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.image-row img {
+    width: 50vh; /* Increased image size */
+    height: 50vh;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.image-row img:hover {
+    transform: scale(1.05);
+}
+

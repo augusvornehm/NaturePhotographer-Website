@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augus Vornehm - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/load-projects.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" id="index">Augus Vornehm</a></li>
+            <ul>
+                <li><a href="../pages/portfolio.html" id="portfolio">Portfolio</a></li>
+                <li><a href="../pages/contact.html" id="contact">Contact</a></li>
+                <li><a href="../pages/about.html" id="about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <section class="hero-portfolio" id="webdev">
+        <h1 id="hero-title-number">03</h1>
+    
+        <div class="hero-text-container">
+            <h1 class="hero-title-portfolio-subpage">
+                <span class="hero-main">Graphic <br>Design</span>
+                <span class="hero-sub" id="sub-sub">& Branding</span>
+            </h1>
+        </div>
+        <a href="../pages/portfolio.html" class="back-arrow">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </a>        
+    </section>    
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio-piece-item-graphic">
+        <h2>Projects</h2>
+    
+            <!-- Portfolio Grid Container (empty Initially, dynamically draws from JSON) -->
+            <div class="portfolio-grid" id="projects-container">
+                <!-- JavaScript inserts project items from JSON  file (projects.json) -->
+            </div>
+    </section>
+    
+    <footer>
+        <!-- First Row: Logo + Name -->
+        <div class="footer-logo">
+            <img class="circle" src="../favicon.svg" alt="Favicon SVG" width="3rem">
+            <span>Augus Vornehm</span>
+        </div>
+    
+        <!-- Second Row: Navigation Links -->
+        <div class="footer-nav">
+            <a href="../../index.html">Home</a>
+            <a href="../../pages/portfolio.html">Portfolio</a>
+            <a href="../../pages/contact.html">Contact</a>
+            <a href="../../pages/about.html">About</a>
+        </div>
+    
+        <!-- Third Row: Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://github.com/augusvornehm" target="_blank" id="git"><img src="../assets/images/git.png" alt="GitHub Account"></a>
+                <a href="https://www.instagram.com/astronartstudio/" target="_blank" id="instagram"><img src="../assets/images/instagram.svg" alt="Instagram Account"></a>
+                <a href="https://linkedin.com/in/augustinavornehm" target="_blank" id="linkedin"><img src="../assets/images/linkedin.svg" alt="LinkedIn Account"></a>
+        </div>
+    </footer>
+    
+    <!-- Bottom Strip -->
+    <div class="footer-bottom"></div>
+    
+
+</body>
+</html>
