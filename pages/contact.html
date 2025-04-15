@@ -56,6 +56,26 @@
             
                 <label for="message">Message</label>
                 <textarea id="message" name="message" placeholder="Enter your message here..." required></textarea>
+
+                <label for="interest">Photography Interests</label>
+                <select id="interests" name="interests" required>
+                    <option value="">-- Select an option --</option>
+                    <option value="wildlife">Wildlife</option>
+                    <option value="landscapes">Landscapes</option>
+                    <option value="marco">Marco</option>
+                    <option value="cloudscape">Cloudscape</option>
+                </select>
+
+                <fieldset>
+                    <legend>Subscribe to our newsletter ?</legend>
+                    <label><input type="radio" name="subscribe" value="yes" required> Yes</label>
+                    <label><input type="radio" name="subscribe" value="no" required> No</label>
+                </fieldset>
+
+                <label>
+                    <input type="checkbox" id="terms" required>
+                    I argree to the terms and conditions
+                </label>
             
                 <button type="submit" class="cta-button">Send</button>
             </form>
