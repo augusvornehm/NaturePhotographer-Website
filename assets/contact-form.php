@@ -1,6 +1,5 @@
-
-
 <?php
+//written by Augustina Vornehm
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
