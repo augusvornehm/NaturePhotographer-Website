@@ -1,6 +1,8 @@
 html, body {
     width: 100%;
     overflow-x: hidden; /*prevent horizontal scrolling */
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -34,7 +36,6 @@ nav {
     left: 0;
     z-index: 1000; /*keeps it above other content */
     box-sizing: border-box;
-    margin-top: 1rem;
 }
 
 nav ul {
@@ -84,8 +85,8 @@ nav ul li a:hover::after {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Full screen width */
-    height: 100%; /* Full screen height */
+    width: 100%; /*full screen width */
+    height: 100%; /*full screen height */
     background-color: black; /* Solid black background */
     color: #000; /* Menu text color */
     display: flex;
@@ -141,9 +142,6 @@ nav ul li a:hover::after {
     background-color: rgba(0, 0, 0, 0.7); /* Darkened background behind menu */
     z-index: -1; /* Behind the menu */
 }
-
-
-
 
 
 
@@ -305,9 +303,13 @@ button:hover {
 #home.hero {
     position: relative;
     background-image: url('/assets/images/home-title.png');
-    background-size: cover; /* Image covers the entire section */
+    background-size: cover;
     background-position: center;
-}
+    padding-top: 0;
+    margin-top: 0;
+    min-height: 100vh; 
+    top: -5rem;
+}  
 
 #home.hero::before {
     content: "";
@@ -1169,19 +1171,20 @@ footer {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
 #hero-title-outline-1 {
     position: absolute;
     top: 1.5rem;
-    right: 10%;
+    right: 2%;
     font-size: 4rem;
     font-weight: bold;
     text-align: right;
     font-size: 12rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: 2px #000; /* black outline og title*/
+    -webkit-text-stroke: 2px #879A77; /* black outline og title*/
     position: absolute;
     z-index: 2; /*behind the main text */
 }
@@ -1189,14 +1192,14 @@ footer {
 #hero-title-outline-2 {
     position: absolute;
     top: 7rem;
-    right: 1%;
+    right: 10%;
     font-size: 4rem;
     font-weight: bold;
     text-align: right;
     font-size: 12rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: 2px #000;/* black outline og title*/
+    -webkit-text-stroke: 2px #DDD6CE;/* black outline og title*/
     position: absolute;
     z-index: 1;  /*behind the main text */
 }
@@ -1248,9 +1251,10 @@ footer {
 .hero-menu li {
     font-size: 1.5rem;
     padding: 0.9rem 0;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #3c3b3b;
     display: flex;
     align-items: center;
+    width: 90%;
 }
 
 .hero-menu a {
@@ -1304,6 +1308,7 @@ footer {
 
     .hero-menu li {
         font-size: 1.2rem;
+        width: 100%;
     }
 
     .hero-menu a {
@@ -1358,7 +1363,7 @@ footer {
         font-size: 1rem;
         padding: 0.5rem 0;
         text-align: left;
-        width: 100%;
+        width: 70vw;
         border-bottom: 1px solid #000;
     }
 
@@ -1449,7 +1454,7 @@ footer {
 
 /* Testimonials */
 .testimonials {
-    text-align: left;
+    text-align: center;
     padding: 5rem 10%;
 }
 
@@ -1709,13 +1714,13 @@ button.cta-button:hover {
 
 /* Portfolio section styling */
 .portfolio {
-    text-align: left;
+    text-align: center;
     padding: 5rem 10%;
 }
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -1723,8 +1728,9 @@ button.cta-button:hover {
 .portfolio-item {
     position: relative;
     display: block;
-    width: 100%;
-    aspect-ratio: 3 / 4; 
+    height: 50vh;
+    width: auto;
+    aspect-ratio: 4 / 3; 
     overflow: hidden;
 }
 
@@ -1754,7 +1760,7 @@ button.cta-button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 1rem;
     opacity: 0;
     visibility: hidden;
@@ -1769,7 +1775,7 @@ button.cta-button:hover {
 
 .overlay h3,
 .overlay p {
-    color: #000;
+    color: #879A77;
     margin: 0;
 }
 
@@ -1805,7 +1811,7 @@ button .portfolio-piece-button {
 /* Desktop layout - 3 Columns, 2 Rows */
 @media screen and (min-width: 1200px) {
     .portfolio-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        grid-template-columns: repeat(2, 1fr); /* 3 columns */
         grid-template-rows: repeat(2, auto); /* 2 rows */
     }
 }
@@ -1813,8 +1819,8 @@ button .portfolio-piece-button {
 /*tablet layout - 2 Columns, 3 Rows */
 @media screen and (max-width: 1025px) {
     .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
-        grid-template-rows: repeat(3, auto); /* 3 rows */
+        grid-template-columns: repeat(1, 1fr); /* 2 columns */
+        grid-template-rows: repeat(4, auto); /* 3 rows */
     }
 }
 
