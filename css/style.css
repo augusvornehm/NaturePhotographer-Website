@@ -796,16 +796,15 @@ img {
 /* contct page*/
 
 .contact-page {
-    background-image: url(../images/background-img-.jpg);
+    background-image: url(../assets/images/background-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
-    color: #000;
     position: relative;
 }
 
-.contact-page::before {
+/* .contact-page::before {
     content: "";
     position: fixed;
     top: 0;
@@ -814,25 +813,25 @@ img {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.05);
     z-index: 0;
-}
+} */
 
-.contact-section {
+/* .contact-section {
     position: relative;
     z-index: 1;
     padding: 3rem 1rem;
-}
+} */
 
 .contact-page-form {
     display: flex;
     flex-direction: column; /*stack elements vertically */
     gap: 1rem;
     width: 100%;
-    /* padding-bottom: 5%; */
+    padding-bottom: 5%;
     max-width: 600px;
     margin: 0 auto;
     padding: 2rem;
     background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     color: #000;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
@@ -840,15 +839,15 @@ img {
 
 /*only bottom border*/
 .contact-page-form input[type="text"],
-.contact-page-form input[type="email"]
-.contact-page-form textarea
+.contact-page-form input[type="email"],
+.contact-page-form textarea,
 .contact-page-form select {
     width: 100%;
     border-radius: 0;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #fff;
     padding: 0.75rem 0.5rem;
     font-size: 1rem;
-    color: #000;
+    color: #fff;
     box-sizing: border-box;
 }
 
@@ -859,9 +858,9 @@ img {
 
 .contact-page-form select {
     padding: 0.75rem;
-    border: 2px solid #000;
+    border: 2px solid #fff;
     background-color: transparent;
-    color: #000;
+    color: #fff;
 }
 
 .contact-page-form select option {
@@ -873,7 +872,11 @@ img {
 .contact-page-form label {
     font-size: 1rem;
     margin-bottom: 0.25rem;
-    color: #000;
+    color: #fff;
+}
+
+::placeholder {
+    color: #bcb5b5;
 }
 
     /* radio buttons and checkboxes */
@@ -881,7 +884,7 @@ img {
     display: block;
     align-items: flex-start;
     gap: 0.5rem;
-    align-content: flex-start;
+    align-content: flex-start; */
 } */
 
 .contact-page-form fieldset {
@@ -898,15 +901,17 @@ img {
 
 .contact-page-form legend {
     font-size: 1rem;
-    color: #000;
+    color: #fff;
     margin-bottom: 0.5rem;
 }
 
-.contact-page-form input[type="radio"],
+/* .contact-page-form input[type="radio"],
 .contact-page-form input[type="checkbox"] {
     margin-right: 0.5rem;
     accent-color: #879A77;
-}
+} */
+
+
 
 select {
     padding: 5%;
