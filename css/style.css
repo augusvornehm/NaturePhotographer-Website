@@ -185,7 +185,7 @@ body {
     margin: 0;
     padding: 0; /*needs to be 0 for project section, all others 5rem 10%*/
     box-sizing: border-box;
-    color: #000;
+    color: #3c3b3b;
     background: #f6f6f6;
     line-height: 1.5;
 }
@@ -196,14 +196,16 @@ h1 {
     font-size: 6rem;
     font-weight: bold;
     margin-bottom: 2rem;
+    text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.2); /* Black shadow with slight blur */
 }
+
 
 /* Apply Tienne to h2 */
 h2 {
     font-family: 'Tienne', serif;
     font-weight: 500;
     font-size: 3rem;
-    color: #000;
+    color: #3c3b3b;
     margin-bottom: 1.5rem;
     margin-top: 1%;
 }
@@ -215,10 +217,11 @@ h2 {
     color: #879A77;
     margin: 0;
     padding: 0;
-    align-self: baseline;
-    align-items: end;
-    text-align: end;
+    align-self: center;
+    align-items: center;
+    text-align: center;
     text-transform: lowercase;
+    
 }
 
 h1 span {
@@ -300,10 +303,35 @@ button:hover {
     min-height: 100vh;
 }
 
+#home.hero {
+    position: relative;
+    background-image: url('/assets/images/home-title.png');
+    background-size: cover; /* Image covers the entire section */
+    background-position: center;
+}
+
+#home.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.4); /* White overlay with 40% opacity */
+    z-index: 1; /* Ensure the overlay is above the background but below the content */
+}
+
+#home.hero > * {
+    position: relative;
+    z-index: 2; /* Ensure text and other content are above the overlay */
+}
+
+
 .hero .text {
     text-align: left;
     width: 80%; /* was 100% */
 }
+
 
 .about {
     display: flex;
