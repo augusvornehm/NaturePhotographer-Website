@@ -8,8 +8,8 @@ body {
     margin: 0;
     padding: 0; /*needs to be 0 for project section, all others 5rem 10%*/
     box-sizing: border-box;
-    color: #ffffff;
-    background: linear-gradient(to bottom, #040615, #050816);
+    color: #000;
+    background: #f6f6f6;
 }
 
 header {
@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2.5rem 5%;
-    color: white;
+    color: #000;
     position: relative;
     width: 100%; 
     z-index: 1000; /* keeps it on top of others*/
@@ -45,7 +45,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
+    color: #000;
     text-decoration: none;
     font-size: 1.2rem;
     text-align: right;
@@ -59,7 +59,7 @@ nav ul li a::after { /*line on hover*/
     left: 0;
     width: 0%;
     height: 3px; /* thickness of the line on hover*/
-    background-color: #9a6afc;
+    background-color: #DDD6CE;
     visibility: hidden; /* hide the line initially beforte hover*/
     transform: translateX(-10px); /*slightly shift line to the left */
     transition: width 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
@@ -87,7 +87,7 @@ nav ul li a:hover::after {
     width: 100%; /* Full screen width */
     height: 100%; /* Full screen height */
     background-color: black; /* Solid black background */
-    color: white; /* Menu text color */
+    color: #000; /* Menu text color */
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Align to the top left */
@@ -179,30 +179,58 @@ nav ul li a:hover::after {
     }
 }
 
+/* Apply Montserrat to body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0; /*needs to be 0 for project section, all others 5rem 10%*/
+    box-sizing: border-box;
+    color: #000;
+    background: #f6f6f6;
+    line-height: 1.5;
+}
 
+/* Apply Tienne to h1 */
 h1 {
+    font-family: 'Tienne', serif;
     font-size: 6rem;
     font-weight: bold;
-    text-shadow: 1px 8px 20px #202955; /*horizontal offset & vertical offset (more downward), blur radius, color of shadow*/
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Apply Tienne to h2 */
+h2 {
+    font-family: 'Tienne', serif;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 1.5rem;
+    margin-top: 1%;
+}
+
+/*Mynerve pretitle */
+.pretitle {
+    font-family: 'Mynerve', cursive;
+    font-size: 1.5rem;
+    color: #879A77;
+    margin: 0;
+    padding: 0;
+    align-self: baseline;
+    align-items: end;
+    text-align: end;
+    text-transform: lowercase;
 }
 
 h1 span {
-    color: #ff7300;
+    color: #879A77;
 }
 
-h2 {
-    font-size: 5rem;
-    color: #fff;
-    margin-bottom: 2.5rem;
-    margin-top: 1%;
-    text-shadow: 1px 5px 15px #202955; /*horizontal offset, vertical offset (more down), blur radius, color of shadow*/
-}
 
 p {
     font-size: 1.15rem;
     margin-bottom: 2.5rem;
     margin-top: 0;
+    text-align: center;
 }
 
 .text {
@@ -220,24 +248,12 @@ p {
     align-items: top; /* vertically center image */
 }
 
-.pretitle {
-    font-size: 1.5rem;
-    color: #ff7300;
-    margin: 0;
-    padding: 0;
-    align-self: baseline;
-    align-items: end;
-    text-align: end;
-    text-transform: lowercase;
-    font-family: 'Courier Prime', monospace;
-}
-
 
 /* Buttons */
 button {
     display: inline-block;
     padding: 1rem 2rem;
-    background: #ff7300;
+    background: #879A77;
     color: rgb(234, 234, 234);
     text-decoration: none;
     border-radius: 5rem;
@@ -248,13 +264,13 @@ button {
 }
 
 button:hover {
-    background-color: #9a6afc;
+    background-color: #DDD6CE;
 }
 
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
-    background: #ff7300;
+    background: #879A77;
     color: rgb(234, 234, 234);
     text-decoration: none;
     border-radius: 5rem;
@@ -267,16 +283,17 @@ button:hover {
 }
 
 .btn:hover {
-    background-color: #9a6afc;
-    color: #fff;
+    background-color: #DDD6CE;
+    color: #000;
 }
 
 /* Section overall adjustments */
 
 .hero {
     display: flex;
-    justify-content: center; /*center horizontally */
-    align-items: center; /*center vertically*/
+    flex-direction: column; /* stack elements vertically */
+    justify-content: center;
+    align-items: center;
     padding: 0 10%;
     max-width: 80vw;
     margin: 0;
@@ -285,18 +302,17 @@ button:hover {
 
 .hero .text {
     text-align: left;
-    width: 100%; 
+    width: 80%; /* was 100% */
 }
-
-
 
 .about {
     display: flex;
-    justify-content: space-between;
-    align-items: left;
+    flex-direction: column; /* stack elements vertically */
+    justify-content: center;
+    align-items: center;
     padding: 5rem 10%;
     max-width: 100vw;
-        margin: 0;
+    margin: 0;
 }
 
 .work, .projects, .software_skills {
@@ -308,23 +324,6 @@ button:hover {
     margin: 0;
 }
 
-.content-left {
-    width: 55%;
-    flex: 1; /*take all available space*/
-}
-
-/* Desktop layout - 3 Columns, 2 Rows */
-
-.content-right {
-    flex: 1;
-    width: 40%;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    max-width: 100%;
-    padding: none;
-    position: relative; 
-}
 
 
 /*tablet layout - 2 Columns, 3 Rows */
@@ -344,7 +343,7 @@ button:hover {
 /*hero section*/
 
 #index {
-    color: white;
+    color: #000;
     text-decoration: none;
     font-size: 1.75rem;
     font-weight: bolder;
@@ -479,7 +478,7 @@ button:hover {
 }
 
 .box {
-    background-color: white;
+    background-color: #000;
     color: black;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
@@ -493,7 +492,7 @@ button:hover {
     height: 25rem;
     align-items: center;
     justify-content: center;
-    border-left: 5px solid #9a6afc;
+    border-left: 5px solid #DDD6CE;
 }
 
 .box img {
@@ -589,14 +588,14 @@ img {
 .project-box {
   flex: 0 0 20rem;
   height: 25rem;
-  background-color: white;
+  background-color: #000;
   color: black;
   ;
   border-radius: 2.5rem;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-sizing: border-box;
-  border-left: 5px solid #9a6afc;
+  border-left: 5px solid #DDD6CE;
   scroll-snap-align: center;
   transform: scale(0.9);
 }
@@ -632,7 +631,7 @@ img {
 .arrow-btn {
   position: absolute;
   bottom: 0;
-  background-color: #ff7300;
+  background-color: #879A77;
   padding: 1rem 1.2rem;
   border-radius: 100%;
   border: none;
@@ -640,11 +639,11 @@ img {
   transition: background-color 0.3s ease;
   cursor: pointer;
   font-size: 2rem;
-  color: #fff;
+  color: #000;
 }
 
 .arrow-btn:hover {
-  background-color: #9a6afc;
+  background-color: #DDD6CE;
 }
 
 .arrow-btn:active {
@@ -670,7 +669,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
-    color: #fff;
+    color: #000;
     position: relative;
 }
 
@@ -703,7 +702,7 @@ img {
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    color: #fff;
+    color: #000;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -714,10 +713,10 @@ img {
 .contact-page-form select {
     width: 100%;
     border-radius: 0;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #000;
     padding: 0.75rem 0.5rem;
     font-size: 1rem;
-    color: #fff;
+    color: #000;
     box-sizing: border-box;
 }
 
@@ -728,9 +727,9 @@ img {
 
 .contact-page-form select {
     padding: 0.75rem;
-    border: 2px solid #fff;
+    border: 2px solid #000;
     background-color: transparent;
-    color: #fff;
+    color: #000;
 }
 
 .contact-page-form select option {
@@ -742,7 +741,7 @@ img {
 .contact-page-form label {
     font-size: 1rem;
     margin-bottom: 0.25rem;
-    color: #fff;
+    color: #000;
 }
 
     /* radio buttons and checkboxes */
@@ -767,14 +766,14 @@ img {
 
 .contact-page-form legend {
     font-size: 1rem;
-    color: #fff;
+    color: #000;
     margin-bottom: 0.5rem;
 }
 
 .contact-page-form input[type="radio"],
 .contact-page-form input[type="checkbox"] {
     margin-right: 0.5rem;
-    accent-color: #ffa500;;
+    accent-color: #879A77;
 }
 
 select {
@@ -789,8 +788,8 @@ footer {
     align-items: center;
     justify-content: center;
     height: 25rem; /* 550px */
-    background-color: #171E40;
-    color: white;
+    background-color: #ebe3d7;
+    color: #000;
     text-align: center;
 }
 
@@ -809,7 +808,7 @@ footer {
 .footer-logo .circle {
     width: 3rem;
     height: 3rem;
-    background-color: #ff7300;
+    background-color: #879A77;
     border-radius: 50%;
 }
 
@@ -820,7 +819,7 @@ footer {
 }
 
 .footer-nav a {
-    color: white;
+    color: #000;
     text-decoration: none;
     font-size: 1.2rem;
 }
@@ -832,7 +831,7 @@ footer {
     left: 0;
     width: 0%;
     height: 3px; /* thickness of the line on hover*/
-    background-color: #9a6afc;
+    background-color: #DDD6CE;
     visibility: hidden; /* hide the line initially beforte hover*/
     transform: translateX(-10px); /*slightly shift line to the left */
     transition: width 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
@@ -858,7 +857,7 @@ footer {
 
 .footer-bottom {
     height: 2.5rem;
-    background-color: #0B112E;
+    background-color: #000;
     width: 100%;
 }
 
@@ -1011,7 +1010,7 @@ footer {
         position: fixed; /* Position it correctly if needed */
         right: 2rem; /* Adjust based on your layout */
         z-index: 10000; /* Ensure it's above other content */
-        color: white;
+        color: #000;
         font-size: 4rem; /* Double the font size (from 2rem to 4rem) */
         width: 60px; /* Adjust width to make it bigger */
         height: 60px; /* Adjust height to make it bigger */
@@ -1060,7 +1059,7 @@ footer {
     font-size: 12rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: 2px white; /* white outline og title*/
+    -webkit-text-stroke: 2px #000; /* black outline og title*/
     position: absolute;
     z-index: 2; /*behind the main text */
 }
@@ -1075,7 +1074,7 @@ footer {
     font-size: 12rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: 2px white;/* white outline og title*/
+    -webkit-text-stroke: 2px #000;/* black outline og title*/
     position: absolute;
     z-index: 1;  /*behind the main text */
 }
@@ -1127,14 +1126,14 @@ footer {
 .hero-menu li {
     font-size: 1.5rem;
     padding: 0.9rem 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #000;
     display: flex;
     align-items: center;
 }
 
 .hero-menu a {
     text-decoration: none;
-    color: white;
+    color: #000;
     display: flex;
     align-items: center;
     font-size: 1.5rem;
@@ -1147,7 +1146,7 @@ footer {
 }
 
 .hero-menu a:hover {
-    color: #ff7300;
+    color: #879A77;
 }
 
 /* Responsive styles for smaller screens */
@@ -1238,7 +1237,7 @@ footer {
         padding: 0.5rem 0;
         text-align: left;
         width: 100%;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid #000;
     }
 
     .hero-menu a {
@@ -1270,7 +1269,7 @@ footer {
 } */
 
 .polaroid {
-    background-color: #fff;
+    background-color: #000;
     padding: 1rem 1rem 2rem;
     border-radius: 8px;
     max-width: 100%;
@@ -1343,7 +1342,7 @@ footer {
     background: transparent;
     padding: 1rem;
     width: 50%;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     border-radius: 10px;
 }
 
@@ -1391,62 +1390,132 @@ footer {
 
 
 /* General contact section settings */
+/* General contact section settings */
 .contact {
     text-align: left;
     padding: 5rem 10%;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 2rem;
+    margin: 0 auto;
 }
+
 
 /* Contact form on the homepage */
-.contact#homepage-contact-form {
-    flex-wrap: wrap;
-    display: flex;
-    order: 1;
-}
-
-.contact#portfolio-contact .content-right table {
-    width: 100%; 
-}
-
-/* Flex properties for ensuring alignment in both sections */
 #homepage-contact-form {
     display: flex;
     flex-direction: column;
-    max-width: 30rem;
-    margin: 0;
+    gap: 1.2rem;
+    max-width: 100%;
+    width: 100%;
 }
 
-input, textarea {
+/* Input + Textarea styles */
+input, textarea, select {
     background: none;
     border: none;
-    border-bottom: 1px solid white;
-    color: white;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
+    border-bottom: 1px solid #000;
+    color: #000;
+    padding: 0.5rem 0;
     font-size: 1rem;
     outline: none;
+    width: 100%;
+    resize: none;
+    appearance: none;
 }
 
+/* Textarea height */
 textarea {
     height: 100px;
 }
 
-button {
-    background-color: #fff;
+/* Labels */
+label {
+    color: #000;
+    font-size: 0.95rem;
+    font-weight: bolder;
+}
+
+/* Radio button container for horizontal layout */
+.radio-buttons {
+    display: flex;
+    gap: 1rem; /* Add space between radio buttons */
+    align-items: center;
+}
+
+/* Radio button styling */
+input[type="radio"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background-color: transparent;
+    appearance: none;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    background-color: #000;
+    box-shadow: 0 0 0 4px #DDD6CE; /* Add shadow for visibility */
+}
+
+/* Custom dropdown styling */
+select {
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 0.5rem;
+    color: #000;
+    font-size: 1rem;
+    width: 100%;
+    appearance: none;
+}
+
+select:focus {
+    outline: none;
+    border-color: #DDD6CE; /* Highlight border on focus */
+}
+
+/* Dropdown arrow styling */
+select::-ms-expand {
+    display: none; /* Remove default dropdown arrow in IE */
+}
+
+select::after {
+    content: '\25BC'; /* Unicode down arrow */
+    position: absolute;
+    right: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+    pointer-events: none;
+}
+
+/* Button styling */
+button.cta-button {
+    background-color: #000;
     color: #000;
     padding: 1rem;
     font-size: 1rem;
     border: none;
     cursor: pointer;
+    margin-top: 1rem;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
 }
+
+button.cta-button:hover {
+    background-color: #DDD6CE;
+    color: #000;
+}
+
 
 /*Web Dev*/
 
 #webdev .hero-title-portfolio-subpage .hero-main {
     z-index: 10;
-    color: #fff;
+    color: #000;
     font-size: 22rem;
     line-height: 50%;
     position: absolute;
@@ -1466,7 +1535,7 @@ button {
     text-align: right;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: 2px white; /*white outline */
+    -webkit-text-stroke: 2px #000; /*black outline */
     position: absolute;
     z-index: 10;  /*behind the main text */
 }
@@ -1480,7 +1549,7 @@ button {
     text-align: right;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: 2px white; /*White outline */
+    -webkit-text-stroke: 2px #000; /*black outline */
     position: absolute;
     z-index: 1;  /*behind the main text */
 }
@@ -1508,13 +1577,13 @@ button {
 .back-arrow svg {
     width: 100%;
     height: auto;
-    stroke: #fff;
+    stroke: #000;
     transition: transform 0.3s ease, stroke 0.3s ease;
 }
 
 .back-arrow:hover svg {
     transform: scale(1.2); /*larger, no shift*/
-    stroke: #ff7300; 
+    stroke: #879A77; 
 }
 
 /* Portfolio section styling */
@@ -1579,7 +1648,7 @@ button {
 
 .overlay h3,
 .overlay p {
-    color: #fff;
+    color: #000;
     margin: 0;
 }
 
@@ -1736,7 +1805,7 @@ button .portfolio-piece-button {
     right: 15%;
     cursor: pointer;
     z-index: 999;
-    color: #ff7300;
+    color: #879A77;
     font-size: 5rem;
 }
 
@@ -1748,7 +1817,7 @@ button .portfolio-piece-button {
 }
 
 .close-btn:hover {
-    color: #9a6afc;
+    color: #DDD6CE;
 }
 
 
@@ -1989,22 +2058,6 @@ button .portfolio-piece-button {
 .image-grid img:hover {
     transform: scale(1.1);
 }
-
-/*3d*/
-
-model-viewer {
-    width: 100%;
-    height: 90%;
-    background-color: #ffffff;
-}
-
-.project-title span{
-    font-size: 1.15rem;
-    margin-bottom: 2.5rem;
-    margin-top: 0;
-    padding: 0 10%;
-}
-
 
 /* Popup Styles */
 /* Grid layout for images in a single row */
