@@ -1,3 +1,6 @@
+//Written by Augustina Vornehm
+
+//submit contact form
 document.getElementById("homepage-contact-form").addEventListener("submit", function (e) {
     let formData = new FormData(this);
     fetch(this.action, { method: "POST", body: formData })
@@ -7,6 +10,7 @@ document.getElementById("homepage-contact-form").addEventListener("submit", func
 });
 
 
+//mini game
 const gameGrid = document.querySelector('.game-grid');
 
 // List of 6 image sources (used twice to make 12 cards)

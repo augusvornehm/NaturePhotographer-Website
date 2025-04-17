@@ -1,3 +1,5 @@
+//Written by Augustina Vornehm
+
 document.addEventListener("DOMContentLoaded", async function () {
     const params = new URLSearchParams(window.location.search);
     const projectId = params.get("id");

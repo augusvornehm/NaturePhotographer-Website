@@ -1,3 +1,5 @@
+//Written by Augustina Vornehm
+
 document.addEventListener("DOMContentLoaded", async function () {
     try {
         // Fetch the JSON data
@@ -11,12 +13,10 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         // Map sub-page file names to categories
         const categories = {
-            "webdev": "webdev",
-            "backend": "backend",
-            "graphic": "graphic",
-            "3d": "3d",
-            "illustrations": "illustration",
-            "contentcreation": "content"
+            "sweden": "sweden",
+            "finland": "finland",
+            "norway": "norway",
+            "portugal": "portugal",
         };
 
         // Get the current page's category from URL

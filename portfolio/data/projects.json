@@ -1,11 +1,15 @@
 [
     {
+        "comment": "Written by Augustina Vornehm"
+    },
+
+    {
         "id": "sagrado-secreto",
         "title": "Sagrado Secreto De Gaudi",
         "image": "../../assets/images/sagradaUX.svg",
         "description": "A UX/UI project on the Virgin Mary Tower...",
         "link": "/portfolio/data/casestudy.html?id=sagrado-secreto",
-        "category": "webdev"
+        "category": "sweden"
     },
     {
         "id": "pytch-ux",
@@ -13,7 +17,7 @@
         "image": "../../assets/images/pytchUX.png",
         "description": "A branding and UX design for a startup...",
         "link": "/portfolio/data/casestudy.html?id=pytch-ux",
-        "category": "webdev"
+        "category": "sweden"
     },
     {
         "id": "origins-ux",
@@ -21,14 +25,14 @@
         "image": "../../assets/images/originsUX.png",
         "description": "A branding and UX design for a startup...",
         "link": "/portfolio/data/casestudy.html?id=origins-ux",
-        "category": "webdev"
+        "category": "sweden"
     },
     { 
         "id": "loop",
         "title": "Loop - Instagram Clone",
         "image": "../../assets/images/originsUX.png",
         "description": "A branding and UX design for a startup...",
-        "category": "backend",
+        "category": "finland",
         "thirdPartyLink": "https://github.com/augusvornehm/TheLoop---Instagram-Clone"
     },
     {
@@ -36,7 +40,7 @@
         "title": "Spider Invaders - Game",
         "image": "../../assets/images/spiderinvaders-title.png",
         "description": "A branding and UX design for a startup...",
-        "category": "backend",
+        "category": "finland",
         "thirdPartyLink": "https://augusvornehm.github.io/Spider-Invasion/"
     },
     { 
@@ -44,7 +48,7 @@
         "title": "Carbon Tracker",
         "image": "../../assets/images/originsUX.png",
         "description": "A branding and UX design for a startup...",
-        "category": "backend",
+        "category": "finland",
         "thirdPartyLink": "https://github.com/augusvornehm/carbonApp"
     },
     {
@@ -53,7 +57,7 @@
         "image": "../../assets/images/couchpotato_logo_square.png",
         "description": "A branding and UX design for a startup...",
         "link": "/portfolio/data/casestudy.html?id=couchpotato",
-        "category": "graphic"
+        "category": "norway"
     },
     {
         "id": "sciencegallery",
@@ -61,7 +65,7 @@
         "image": "../../assets/images/Logo Science Gallery_Logo 05- 600 x 600 px.png",
         "description": "A branding and UX design for a startup...",
         "link": "/portfolio/data/casestudy.html?id=sciencegallery",
-        "category": "graphic"
+        "category": "norway"
     },
     {
         "id": "avalanche",
@@ -69,7 +73,7 @@
         "image": "../../assets/images/Avalanche Logo Orange.png",
         "description": "A branding and UX design for a startup...",
         "link": "/portfolio/data/casestudy.html?id=avalanche",
-        "category": "graphic"
+        "category": "norway"
     },
     {
         "id": "pytch",
@@ -77,7 +81,7 @@
         "image": "../../assets/images/Pytch-logo.png",
         "description": "A branding and UX design for a startup...",
         "link": "/portfolio/data/casestudy.html?id=pytch",
-        "category": "graphic"
+        "category": "norway"
     },
     {
         "id": "origins",
@@ -85,7 +89,7 @@
         "image": "../../assets/images/origins logo.png",
         "description": "A branding and UX design for a startup...",
         "link": "/portfolio/data/casestudy.html?id=origins-ux",
-        "category": "graphic"
+        "category": "norway"
     },
     {
         "id": "acrossproperty",
@@ -93,39 +97,7 @@
         "image": "../../assets/images/Across Property Visitenkarten2_Vorderseite 2.png",
         "description": "A branding and UX design for a startup...",
         "link": "/portfolio/data/casestudy.html?id=acrossproperty",
-        "category": "graphic"
-    },
-    {
-        "id": "andysroom",
-        "title": "Toy Story's Andy's Room x Mario Cart",
-        "image": "../../assets/images/AndysRoom3.png",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=andysroom",
-        "category": "3d"
-    },
-    { 
-        "id": "island",
-        "title": "Augus' Dream Island",
-        "image": "../../assets/images/originsUX.png",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=island",
-        "category": "3d"
-    },
-    { 
-        "id": "origins3d",
-        "title": "Origins - The VR Immersion",
-        "image": "../../assets/images/originsUX.png",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=origins3d",
-        "category": "3d"
-    },
-    {
-        "id": "chess",
-        "title": "Photorealistic Room",
-        "image": "../../assets/images/chess1.jpeg",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=chess",
-        "category": "3d"
+        "category": "norway"
     },
     {
         "id": "whale",
@@ -133,7 +105,7 @@
         "image": "../../assets/images/whale.png",
         "description": "A branding and UX design for a startup...",
         "link": "/portfolio/data/casestudy.html?id=whale",
-        "category": "illustration"
+        "category": "portugal"
     },
     {
         "id": "astronaut",
@@ -141,7 +113,7 @@
         "image": "../../assets/images/astronaut5.png",
         "description": "A branding and UX design for a startup...",
         "link": "data/casestudy.html?id=astronaut",
-        "category": "illustration"
+        "category": "portugal"
     },
     {
         "id": "tromso",
@@ -149,7 +121,7 @@
         "image": "../../assets/images/Norway_aurora_light_sky.png",
         "description": "A branding and UX design for a startup...",
         "link": "/portfolio/data/casestudy.html?id=tromso",
-        "category": "illustration"
+        "category": "portugal"
     },
     {
         "id": "niko",
@@ -157,7 +129,7 @@
         "image": "../../assets/images/niko.jpg",
         "description": "A branding and UX design for a startup...",
         "link": "/portfolio/data/casestudy.html?id=niko",
-        "category": "illustration"
+        "category": "portugal"
     },
     { 
         "id": "panda",
@@ -165,7 +137,7 @@
         "image": "../../assets/images/",
         "description": "A branding and UX design for a startup...",
         "link": "/portfolio/data/casestudy.html?id=panda",
-        "category": "illustration"
+        "category": "portugal"
     },
     {
         "id": "monkey",
@@ -173,7 +145,7 @@
         "image": "../../assets/images/monkey.jpg",
         "description": "A branding and UX design for a startup...",
         "link": "/portfolio/data/casestudy.html?id=monkey",
-        "category": "illustration"
+        "category": "portugal"
     },
     {
         "id": "redrosemovement",
@@ -181,7 +153,7 @@
         "image": "../../assets/images/rrm4.png",
         "description": "A branding and UX design for a startup...",
         "link": "/portfolio/data/casestudy.html?id=redrosemovement",
-        "category": "illustration"
+        "category": "portugal"
     },
     {
         "id": "friends",
@@ -189,158 +161,7 @@
         "image": "../../assets/images/friends.JPG",
         "description": "A branding and UX design for a startup...",
         "link": "/portfolio/data/casestudy.html?id=friends",
-        "category": "illustration"
-    },
-    {
-        "id": "geiranger-illustration",
-        "title": "Geiranger Trail",
-        "image": "../../assets/images/Geiranger.PNG",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=geiranger-illustration",
-        "category": "illustration"
-    },
-    {
-        "id": "everywear",
-        "title": "Everywear Norway - Poster",
-        "image": "../../assets/images/EW Norway aurora poster.PNG",
-        "description": "A branding and UX design for a startup...",
-        "category": "graphic"
-    },
-    {
-        "id": "astronautmoon",
-        "title": "Music Takes You Flying",
-        "image": "../../assets/images/headphones.png",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=astronautmoon",
-        "category": "illustration"
-    },
-    {
-        "id": "overwhelmed",
-        "title": "Overwhelmed",
-        "image": "../../assets/images/overwhelmed1.jpg",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=overwhelmed",
-        "category": "illustration"
-    },
-    {
-        "id": "mickey-color",
-        "title": "Childhood",
-        "image": "../../assets/images/colordisney.jpg",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=mickey-color",
-        "category": "illustration"
-    },
-    {
-        "id": "beast",
-        "title": "Beast Apparel",
-        "image": "../../assets/images/beast.jpg",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=beast",
-        "category": "illustration"
-    },
-    {
-        "id": "spleisure-merch",
-        "title": "Spleisure Merch",
-        "image": "../../assets/images/spleisure-merch-title.jpg",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=spleisure-merch",
-        "category": "content"
-    },
-    {
-        "id": "spleisure-marketing",
-        "title": "Spleisure Social Media Marketing",
-        "image": "../../assets/images/spleisure1.jpeg",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=spleisure-marketing",
-        "category": "content"
-    },
-    {
-        "id": "biggestfear",
-        "title": "Biggest Fear Video Production",
-        "image": "../../assets/images/biggestfear-title.jpg",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=biggestfear",
-        "category": "content"
-    },
-    {
-        "id": "carilo-video",
-        "title": "AirBnB Shoot Argentina",
-        "image": "../../assets/images/marienburg-title.jpg",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=carilo-video",
-        "category": "content"
-    },
-    {
-        "id": "lofoten",
-        "title": "Hattvika Lodge Video Production",
-        "image": "../../assets/images/lofoten-wide.jpg",
-        "description": "A video",
-        "link": "/portfolio/data/casestudy.html?id=lofoten",
-        "category": "content"
-    },
-    {
-        "id": "akrafjorden",
-        "title": "Åkrafjorden Glamping Content",
-        "image": "../../assets/images/akrafjorden.HEIC",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=akrafjorden",
-        "category": "content"
-    },
-    {
-        "id": "bergenshoot",
-        "title": "Photo Shoot Bergen",
-        "image": "../../assets/images/j&j.jpeg",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=jack&jones",
-        "category": "content"
-    },
-    {
-        "id": "arcticcircle",
-        "title": "Arctic Circle",
-        "image": "../../assets/images/arcticcircle.jpg",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=arcticcircle",
-        "category": "content"
-    },
-    {
-        "id": "aurora",
-        "title": "Northern Lights",
-        "image": "../../assets/images/aurorafriends.jpg",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=aurora",
-        "category": "content"
-    },
-    {
-        "id": "3peeks",
-        "title": "Three Peaks, Oahu, Hawaii",
-        "image": "../../assets/images/hawaiicrater.JPG",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=3peeks",
-        "category": "content"
-    },
-    {
-        "id": "hawaii",
-        "title": "Life in Oahu, Hawaii",
-        "image": "../../assets/images/oahu.JPG",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=hawaii",
-        "category": "content"
-    },
-    {
-        "id": "argentina",
-        "title": "Argentina Road Trip",
-        "image": "../../assets/images/perito-moreno.JPG",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=argentina",
-        "category": "content"
-    },
-    {
-        "id": "geiranger",
-        "title": "Geiranger, Norway",
-        "image": "../../assets/images/skagefla.JPG",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=geiranger",
-        "category": "content"
+        "category": "portugal"
     }
 ]
 

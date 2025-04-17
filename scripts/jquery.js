@@ -1,3 +1,5 @@
+//Written by Augustina Vornehm
+
 $(document).ready(function () {
     // When an image is clicked, show the popup
     $(".portfolio-piece-img").click(function () {

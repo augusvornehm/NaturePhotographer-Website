@@ -1,3 +1,4 @@
+<!--Written by Augustina Vornehm-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,44 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Augus Vornehm - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/load-projects.js"></script>
 </head>
 <body>
-     <header>
+    <header>
         <nav>
-            <a href="../index.html" id="index">Augus Vornehm</a>
-            
+            <a href="../index.html" id="index">Augus Vornehm</a></li>
             <ul>
-                <li><a href="../pages/portfolio.html" id="portfolio">Portfolio</a>
+                <li><a href="../pages/portfolio.html" id="portfolio">Portfolio</a></li>
                 <li><a href="../pages/contact.html" id="contact">Contact</a></li>
                 <li><a href="../pages/about.html" id="about">About</a></li>
             </ul>
         </nav>
-
-        <!-- Burger Menu -->
-        <a id="burgerMenu" class="burger-menu">☰</a>
-
-        
-        <!-- Sliding menu container -->
-        <div class="menu-container">
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="../pages/portfolio.html">Portfolio</a></li>
-                    <li><a href="../pages/contact.html">Contact</a></li>
-                    <li><a href="../pages/about.html">About</a></li>
-                </ul>
-            </nav>
-        </div>
-
     </header>
-
-    <section class="hero-portfolio" id="webdev">
-        <h1 id="hero-title-number">05</h1>
+<body>
+    <section class="hero-portfolio" id="title-tour">
+        <h1 id="hero-title-number">02</h1>
     
         <div class="hero-text-container">
             <h1 class="hero-title-portfolio-subpage">
-                <span class="hero-main">3d <br>Models</span>
-                <span class="hero-sub" id="sub-sub">& Animation</span>
+                <span class="hero-main">Back <br>End</span>
+                <span class="hero-sub" id="sub-sub">Development</span>
             </h1>
         </div>
         <a href="../pages/portfolio.html" class="back-arrow">
@@ -52,15 +38,15 @@
         </a>        
     </section>    
 
-   <!-- Portfolio Section -->
-   <section class="portfolio">
-    <h2>Projects</h2>
-
-        <!-- Portfolio Grid Container (empty Initially, dynamically draws from JSON) -->
-        <div class="portfolio-grid" id="projects-container">
-            <!-- JavaScript inserts project items from JSON  file (projects.json) -->
-        </div>
-</section>
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <h2>Projects</h2>
+    
+            <!-- Portfolio Grid Container (empty Initially, dynamically draws from JSON) -->
+            <div class="portfolio-grid" id="projects-container">
+                <!-- JavaScript inserts project items from JSON  file (projects.json) -->
+            </div>
+        </section>
     
     <footer>
         <!-- First Row: Logo + Name -->
@@ -88,6 +74,6 @@
     <!-- Bottom Strip -->
     <div class="footer-bottom"></div>
     
-    <script src="../scripts/load-projects.js"></script>
+
 </body>
 </html>
