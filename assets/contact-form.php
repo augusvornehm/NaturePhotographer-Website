@@ -131,9 +131,5 @@ echo '<style>
 
 </style>';
 
-
-
-
-
 ?>
 

@@ -1612,15 +1612,15 @@ button.cta-button:hover {
 }
 
 
-/*Web Dev*/
+/*subpages*/
 
 #title-tour .hero-title-portfolio-subpage .hero-main {
     z-index: 10;
-    color: #000;
+    color: #879A77;
     font-size: 22rem;
     line-height: 50%;
     position: absolute;
-    top: 20%;
+    top: 25%;
     right: 10%;
     font-weight: bold;
     text-align: right;
@@ -1629,8 +1629,8 @@ button.cta-button:hover {
 
 .hero-sub {
     position: absolute;
-    top: 25%;
-    right: 10%;
+    top: 15%;
+    right: 5%;
     font-size: 22rem;
     font-weight: bold;
     text-align: right;
@@ -1644,7 +1644,7 @@ button.cta-button:hover {
 #sub-sub {
     position: absolute;
     top: 55%;
-    right: 15%;
+    right: 5%;
     font-size: 12rem;
     font-weight: bold;
     text-align: right;
