@@ -516,18 +516,20 @@ button:hover {
 
 .work-overview {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*columns at least 300px width */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
     width: 100%;
-    margin-bottom: 2.5rem;
+    max-width: 80%;
+    margin: 0 auto 2.5rem auto; /*centers it horizontally */
+    justify-items: center; /*centers boxes in grid*/
 }
+
 
 .box {
     background-color: #000;
     color: black;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
-    padding: 2rem;
     border-radius: 2.5rem;
     font-size: 1.1rem;
     text-align: center;
@@ -542,7 +544,13 @@ button:hover {
 
 .box img {
     max-width: auto;
-    height: 35%;
+    height: 50%;
+    border-radius: 2.5rem 2.5rem 0 0;
+}
+
+.box-text {
+    color: #DDD6CE;
+    padding: 0.5rem
 }
 
 .box:hover {
@@ -1541,7 +1549,7 @@ input, textarea, select {
     background: none;
     border: none;
     border-bottom: 1px solid #DDD6CE;
-    color: #000;
+    color: #3c3b3b;
     padding: 0.5rem 0;
     font-size: 1rem;
     outline: none;
