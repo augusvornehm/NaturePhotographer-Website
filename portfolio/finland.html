@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Augus Vornehm - Portfolio</title>
+    <title>Christoph Vornehm Photography</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
     <link rel="stylesheet" href="../css/style.css">
@@ -42,17 +42,44 @@
     <section class="portfolio">
         <h2>Projects</h2>
     
-            <!-- Portfolio Grid Container (empty Initially, dynamically draws from JSON) -->
-            <div class="portfolio-grid" id="projects-container">
-                <!-- JavaScript inserts project items from JSON  file (projects.json) -->
+        <!-- Portfolio Grid Container (empty Initially, dynamically draws from JSON) -->
+        <div class="portfolio-grid" id="projects-container">
+        <!-- JavaScript inserts project items from JSON  file (projects.json) -->
+        </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <h2>Projects</h2>
+        <div class="portfolio-grid">
+
+            <!-- Portfolio Item 1 -->
+            <div class="portfolio-piece-item-illustrations">
+                <img src="../assets/images/fox.png" alt="Project 1" class="portfolio-piece-img">
             </div>
-        </section>
+
+            <!-- Portfolio Item 2 -->
+            <div class="portfolio-piece-item-illustrations">
+                <img src="../assets/images/home-title.png" alt="Project 2" class="portfolio-piece-img">
+            </div>
+
+            <!-- Portfolio Item 3 -->
+            <div class="portfolio-piece-item-illustrations">
+                <img src="../assets/images/hero-title.png" alt="Project 3" class="portfolio-piece-img">
+            </div>
+
+            <!-- Portfolio Item 4 -->
+            <div class="portfolio-piece-item-illustrations">
+                <img src="../assets/images/game4.png" alt="Project 4" class="portfolio-piece-img">
+            </div>
+
+        </div>
+    </section>
     
     <footer>
         <!-- First Row: Logo + Name -->
         <div class="footer-logo">
-            <img class="circle" src="../favicon.svg" alt="Favicon SVG" width="3rem">
-            <span>Augus Vornehm</span>
+            <img class="circle" width="3rem">
+            <span>Christoph Vornehm</span>
         </div>
     
         <!-- Second Row: Navigation Links -->
@@ -65,15 +92,28 @@
     
         <!-- Third Row: Social Media Icons -->
         <div class="social-icons">
-            <a href="https://github.com/augusvornehm" target="_blank" id="git"><img src="../assets/images/git.png" alt="GitHub Account"></a>
-                <a href="https://www.instagram.com/astronartstudio/" target="_blank" id="instagram"><img src="../assets/images/instagram.svg" alt="Instagram Account"></a>
-                <a href="https://linkedin.com/in/augustinavornehm" target="_blank" id="linkedin"><img src="../assets/images/linkedin.svg" alt="LinkedIn Account"></a>
-        </div>
+            <a href="https://www.instagram.com/christophvornehm3838/" target="_blank" id="instagram"><img src="assets/images/instagram.png" alt="Instagram Account"></a>        </div>
     </footer>
     
     <!-- Bottom Strip -->
     <div class="footer-bottom"></div>
-    
 
+    <!-- Popup Image Show Section -->
+    <div class="show">
+        <div class="overlay"></div>
+        <div class="img-show">
+            <!-- Inline SVG Close Button (X) -->
+            <a href="javascript:void(0);" class="close-btn">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 18L18 6M6 6L18 18"></path> <!-- Cross (X) -->
+                </svg>
+            </a>
+            
+            <img src="">
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/scripts/index.js"></script>
 </body>
 </html>
