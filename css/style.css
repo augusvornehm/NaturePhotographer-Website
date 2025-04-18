@@ -1406,13 +1406,26 @@ footer {
 /* About Section */
 .about-my-work {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 5rem 10%;
+    gap: 2rem;
 }
 
 .about-my-work-text {
     max-width: 50%;
+    text-align: center;
+}
+
+.about-my-work-text h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.about-my-work-text p {
+    margin: 0 0 1rem 0;
+    line-height: 1.6;
 }
 
 /*about page image*/
