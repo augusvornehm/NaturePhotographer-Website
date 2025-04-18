@@ -37,15 +37,15 @@
         </div>
     </header>
     
-    <section id="contactpage" class="hero">
+    <section class="contact">
         <div class="content-left">
             <h1>Let's <span>talk!</span></h1>
             <p>Feel free to rech out to see how we can work and/or be creative together!
             <br>Email me below, or lets connect on social media.</p>
             <div class="social-icons">
-                <a href="https://github.com/augusvornehm" target="_blank" id="git"><img src="../assets/images/git.png" alt="GitHub Account"></a>
+                
                 <a href="https://www.instagram.com/astronartstudio/" target="_blank" id="instagram"><img src="../assets/images/instagram.svg" alt="Instagram Account"></a>
-                <a href="https://linkedin.com/in/augustinavornehm" target="_blank" id="linkedin"><img src="../assets/images/linkedin.svg" alt="LinkedIn Account"></a>
+                
             </div>
             <form class="contact-page-form" action="/assets/contact-form.php" method="POST" enctype="application/x-www-form-urlencoded">
                 <label for="name">Name</label>
@@ -53,29 +53,28 @@
             
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="johndoe@email.com" required>
-            
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Enter your message here..." required></textarea>
-
-                <label for="interest">Photography Interests</label>
-                <select id="interests" name="interests" required>
-                    <option value="">-- Select an option --</option>
-                    <option value="wildlife">Wildlife</option>
-                    <option value="landscapes">Landscapes</option>
-                    <option value="marco">Marco</option>
-                    <option value="cloudscape">Cloudscape</option>
+                
+                <label for="topic">What’s this about?</label>
+                <select id="topic" name="topic" required>
+                    <option value="" disabled selected>Select a topic</option>
+                    <option value="collaboration">Collaboration</option>
+                    <option value="print-request">Print Request</option>
+                    <option value="nature-talk">Just talking nature</option>
                 </select>
 
-                <fieldset>
-                    <legend>Subscribe to our newsletter ?</legend>
-                    <label><input type="radio" name="subscribe" value="yes" required> Yes</label>
-                    <label><input type="radio" name="subscribe" value="no" required> No</label>
-                </fieldset>
+                <label>Are you a returning client?</label>
+                <label><input type="radio" name="returning" value="yes" required> Yes</label>
+                <label><input type="radio" name="returning" value="no"> No</label>
+
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message here..." required></textarea>
 
                 <label>
                     <input type="checkbox" id="terms" required>
                         I agree to the terms and conditions
                 </label>
+
             
                 <button type="submit" class="cta-button">Send</button>
             </form>
