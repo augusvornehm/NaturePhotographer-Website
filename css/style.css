@@ -2108,7 +2108,8 @@ button .portfolio-piece-button {
 /* contct page*/
 
 .contact-page {
-    background-image: url(../assets/images/background-img.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url(../assets/images/background-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -2189,38 +2190,14 @@ button .portfolio-piece-button {
     color: #000;
 }
 
-
 .contact-page-form label {
     font-size: 0.95rem;
     font-weight: bolder;
-    /* align-items: center;
-    gap: 0.5rem; */
     color: #fff;
 }
 
 ::placeholder {
     color: #bcb5b5;
-}
-
-    /* radio buttons and checkboxes */
-/* .contact-page-form label {
-    display: block;
-    align-items: flex-start;
-    gap: 0.5rem;
-    align-content: flex-start; */
-
-
-.contact-page-form fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-.contact-page-form legend {
-    font-size: 1rem;
-    color: #fff;
-    margin-bottom: 0.5rem;
 }
 
 .contact-page-form input[type="checkbox"] {
