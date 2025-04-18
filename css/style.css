@@ -652,6 +652,32 @@ img {
     transform: rotateY(180deg);
 }
 
+.try-counter {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .try-again-btn {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #DDD6CE;
+    color: #879A77;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    width: 50%;
+    align-self: center;
+  }
+  
+  .try-again-btn:hover {
+    background-color: #879A77;
+    color: #fff;
+  }
+  
+
 /*tablet */
 @media screen and (max-width: 1024px) {
     .game-grid {
