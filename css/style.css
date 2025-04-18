@@ -2114,6 +2114,11 @@ button .portfolio-piece-button {
     background-position: center;
     min-height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 100%;
+    width: 100%;
 }
 
 /* .contact-page::before {
@@ -2130,7 +2135,7 @@ button .portfolio-piece-button {
 .contact-page-form {
     display: flex;
     flex-direction: column; /*stack elements vertically */
-    gap: 1rem;
+    gap: 1.2rem;
     width: 100%;
     padding-bottom: 5%;
     max-width: 600px;
@@ -2144,29 +2149,37 @@ button .portfolio-piece-button {
 }
 
 /*only bottom border*/
-.contact-page-form input[type="text"],
-.contact-page-form input[type="email"],
+.contact-page-form input,
 .contact-page-form textarea,
 .contact-page-form select {
     width: 100%;
-    border-radius: 0;
-    border-bottom: 2px solid #fff;
-    padding: 0.75rem 0.5rem;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #DDD6CE;
+    padding: 0.5rem 0;
     font-size: 1rem;
     color: #fff;
-    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    appearance: none;
 }
 
 .contact-page-form textarea {
-    resize: vertical;
-    min-height: 120px;
+    /* resize: vertical;
+    min-height: 120px; */
+    height: 100px;
 }
 
 .contact-page-form select {
-    padding: 0.75rem;
-    border: 2px solid #fff;
+    color: #fff; 
     background-color: transparent;
-    color: #fff;
+    border: 1px solid #DDD6CE;
+    border-radius: 4px;
+    padding: 0.5rem;
+    /* color: #3c3b3b; */
+    font-size: 1rem;
+    width: 100%;
+    appearance: none;
 }
 
 .contact-page-form select option {
@@ -2176,9 +2189,10 @@ button .portfolio-piece-button {
 
 
 .contact-page-form label {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: bolder;
+    /* align-items: center;
+    gap: 0.5rem; */
     color: #fff;
 }
 
@@ -2207,7 +2221,6 @@ button .portfolio-piece-button {
     margin-bottom: 0.5rem;
 }
 
-.contact-page-form input[type="radio"],
 .contact-page-form input[type="checkbox"] {
     accent-color: #879A77;
     appearance: auto;
@@ -2215,6 +2228,17 @@ button .portfolio-piece-button {
     height: 18px;
     width: 18px;
     margin-right: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 0 4px #DDD6CE;
+}
+
+.contact-page-form input[type="radio"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 2px solid #DDD6CE;
+    background-color: transparent;
+    appearance: none;
     cursor: pointer;
 }
 
