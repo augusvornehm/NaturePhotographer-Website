@@ -1415,6 +1415,29 @@ footer {
     max-width: 50%;
 }
 
+/*about page image*/
+
+.polaroid {
+    background-color: #000;
+    padding: 1rem 1rem 2rem;
+    border-radius: 8px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.polaroid img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.polaroid img:hover {
+    transform: scale(1.05);
+}
+
+
+
 /* .about-my-work-image img {
     width: 500px;
     height: auto;
@@ -2219,34 +2242,5 @@ button .portfolio-piece-button {
     background-color: transparent;
     appearance: none;
     cursor: pointer;
-}
-
-
-/*about page image*/
-
-.polaroid {
-    background-color: #000;
-    padding: 1rem 1rem 2rem;
-    border-radius: 8px;
-    max-width: 100%;
-    width: 100%;
-}
-
-.polaroid img {
-    width: 100%;
-    max-width: 100%;
-    display: block;
-    height: auto;
-}
-
-.polaroid img:hover {
-    transform: scale(1.05);
-}
-
-.polaroid p {
-    color: #000;
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 1rem 0 0;
 }
 
