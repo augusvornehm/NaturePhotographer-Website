@@ -1,6 +1,7 @@
 //Written by Augustina Vornehm
 
 //submit contact form
+
 document.getElementById("homepage-contact-form").addEventListener("submit", function (e) {
     let formData = new FormData(this);
     fetch(this.action, { method: "POST", body: formData })
@@ -11,6 +12,8 @@ document.getElementById("homepage-contact-form").addEventListener("submit", func
 
 
 //mini game
+
+
 const gameGrid = document.querySelector('.game-grid');
 const gameSection = document.getElementById('memory-game');
 
