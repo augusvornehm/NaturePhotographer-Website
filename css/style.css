@@ -305,7 +305,7 @@ button:hover {
 
 #home.hero {
     position: relative;
-    background-image: url('/assets/images/home-title.png');
+    background-image: url('/assets/images/CV.png');
     background-size: cover;
     background-position: center;
     padding-top: 0;
