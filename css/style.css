@@ -1403,14 +1403,21 @@ footer {
 
 
 /* About Section - Adam Ralph */
-.about-my-work {
+
+.about-my-work span {
+    font-weight: 600;
+}
+
+
+
+/* .about-my-work {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 5rem 10%;
     gap: 2rem;
-}
+} */
 
 .about-my-work-text {
     max-width: 50%;
@@ -1429,19 +1436,38 @@ footer {
 
 
 /*about page image Adam Ralph*/
+
 .polaroid {
+    position: relative;
+    padding: 15px 15px 40px 15px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: rotate(2deg);
+    display: inline-block;
+}
+
+
+
+/* .polaroid {
     background-color: #000;
     padding: 1rem 1rem 2rem;
     border-radius: 8px;
     max-width: 100%;
     width: 100%;
-}
+} */
 
-.polaroid img {
+/* .polaroid img {
     width: 100%;
     max-width: 100%;
     display: block;
     height: auto;
+} */
+
+.polaroid img {
+    max-height: 400px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .polaroid img:hover {
