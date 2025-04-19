@@ -3,165 +3,116 @@
         "comment": "Written by Augustina Vornehm"
     },
 
+
     {
-        "id": "sagrado-secreto",
-        "title": "Sagrado Secreto De Gaudi",
-        "image": "../../assets/images/sagradaUX.svg",
-        "description": "A UX/UI project on the Virgin Mary Tower...",
-        "link": "/portfolio/data/casestudy.html?id=sagrado-secreto",
+        "comment": "sweden"
+    },
+    {
+        "id": "ice",
+        "title": "White & Blue Ice",
+        "image": "../../assets/images/sweden/sweden1.png",
+        "description": "A moody morning in Sweden’s frozen glaciers bringing colorful ice.",
+        "link": "/portfolio/data/casestudy.html?id=ice",
         "category": "sweden"
     },
     {
-        "id": "pytch-ux",
-        "title": "Pytch UX",
-        "image": "../../assets/images/pytchUX.png",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=pytch-ux",
+        "id": "bisonherd",
+        "title": "Bison Herd",
+        "image": "../../assets/images/sweden/sweden2.png",
+        "description": "A herd of bisons afer a long night of fighting a pack of wolfs.",
+        "link": "/portfolio/data/casestudy.html?id=bisonherd",
         "category": "sweden"
     },
     {
-        "id": "origins-ux",
-        "title": "Origins UX",
-        "image": "../../assets/images/originsUX.png",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=origins-ux",
+        "id": "Bison",
+        "title": "Bison Call",
+        "image": "../../assets/images/sweden/sweden3.png",
+        "description": "A bison marking its territory by letting out a warning sound.",
+        "link": "/portfolio/data/casestudy.html?id=Bison",
         "category": "sweden"
     },
-    { 
-        "id": "loop",
-        "title": "Loop - Instagram Clone",
-        "image": "../../assets/images/originsUX.png",
-        "description": "A branding and UX design for a startup...",
-        "category": "finland",
-        "thirdPartyLink": "https://github.com/augusvornehm/TheLoop---Instagram-Clone"
+    {
+        "id": "BisonFamily",
+        "title": "Bison Family",
+        "image": "../../assets/images/sweden/sweden4.png",
+        "description": "A bison family after losing their calf to wolfs the night before.",
+        "link": "/portfolio/data/casestudy.html?id=BisonFamily",
+        "category": "sweden"
+    },
+
+
+    
+    {
+        "comment": "finland"
     },
     {
-        "id": "spiderinvasion",
-        "title": "Spider Invaders - Game",
-        "image": "../../assets/images/spiderinvaders-title.png",
-        "description": "A branding and UX design for a startup...",
-        "category": "finland",
-        "thirdPartyLink": "https://augusvornehm.github.io/Spider-Invasion/"
-    },
-    { 
-        "id": "carbonapp",
-        "title": "Carbon Tracker",
-        "image": "../../assets/images/originsUX.png",
-        "description": "A branding and UX design for a startup...",
-        "category": "finland",
-        "thirdPartyLink": "https://github.com/augusvornehm/carbonApp"
+        "id": "mountainview",
+        "title": "Green & Blue Mountain View",
+        "image": "../../assets/images/finland/finland1.png",
+        "description": "Sun kissed view on a deep green forrest with a blue river flowing.",
+        "link": "/portfolio/data/casestudy.html?id=mountainview",
+        "category": "finland"
     },
     {
-        "id": "couchpotato",
-        "title": "Couch Potato App",
-        "image": "../../assets/images/couchpotato_logo_square.png",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=couchpotato",
+        "id": "bearandseaguls",
+        "title": "Bear & Seaguls",
+        "image": "../../assets/images/finland/finland2.png",
+        "description": "Bear and seaguls at a pond in the middle of Lapland.",
+        "link": "/portfolio/data/casestudy.html?id=bearandseaguls",
+        "category": "finland"
+    },
+    {
+        "id": "bearcalling",
+        "title": "Bear calling",
+        "image": "../../assets/images/finland/finland3.png",
+        "description": "Mother bear calling her cubs.",
+        "link": "/portfolio/data/casestudy.html?id=bearcalling",
+        "category": "finland"
+    },
+    {
+        "id": "owl",
+        "title": "Owl",
+        "image": "../../assets/images/finland/finland4.png",
+        "description": "Fresh tracks on Finnish snow hinting at reindeer passing through.",
+        "link": "/portfolio/data/casestudy.html?id=owl",
+        "category": "finland"
+    },
+
+
+    {
+        "comment": "norway"
+    },
+    {
+        "id": "huskey",
+        "title": "Jawning Huskey",
+        "image": "../../assets/images/norway/norway1.png",
+        "description": "A tired huskey jawning after a long day of sled riding.",
+        "link": "/portfolio/data/casestudy.html?id=huskey",
         "category": "norway"
     },
     {
-        "id": "sciencegallery",
-        "title": "The Science Gallery",
-        "image": "../../assets/images/Logo Science Gallery_Logo 05- 600 x 600 px.png",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=sciencegallery",
+        "id": "snowcabin",
+        "title": "Cabin in the snow",
+        "image": "../../assets/images/norway/norway2.png",
+        "description": "Safe shelter in a snowstorm, barely visible in the nordlands of Norway.",
+        "link": "/portfolio/data/casestudy.html?id=snowcabin",
         "category": "norway"
     },
     {
-        "id": "avalanche",
-        "title": "Avalanche Marketing",
-        "image": "../../assets/images/Avalanche Logo Orange.png",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=avalanche",
+        "id": "sled",
+        "title": "Dog Sled",
+        "image": "../../assets/images/norway/norway3.png",
+        "description": "Sunlight dancing on the snow while on a huskey sled to bring food to shelters.",
+        "link": "/portfolio/data/casestudy.html?id=sled",
         "category": "norway"
     },
     {
-        "id": "pytch",
-        "title": "Pytch - Python Learning Platform",
-        "image": "../../assets/images/Pytch-logo.png",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=pytch",
+        "id": "tipi",
+        "title": "Tipi in the snow",
+        "image": "../../assets/images/norway/norway4.png",
+        "description": "Bright, warming fire in our tipi in the snow.",
+        "link": "/portfolio/data/casestudy.html?id=tipi",
         "category": "norway"
-    },
-    {
-        "id": "origins",
-        "title": "Origins - The VR Immersion on Web",
-        "image": "../../assets/images/origins logo.png",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=origins-ux",
-        "category": "norway"
-    },
-    {
-        "id": "acrossproperty",
-        "title": "Accross Property",
-        "image": "../../assets/images/Across Property Visitenkarten2_Vorderseite 2.png",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=acrossproperty",
-        "category": "norway"
-    },
-    {
-        "id": "whale",
-        "title": "Dreaming Whale",
-        "image": "../../assets/images/whale.png",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=whale",
-        "category": "portugal"
-    },
-    {
-        "id": "astronaut",
-        "title": "Chasing Dreams",
-        "image": "../../assets/images/astronaut5.png",
-        "description": "A branding and UX design for a startup...",
-        "link": "data/casestudy.html?id=astronaut",
-        "category": "portugal"
-    },
-    {
-        "id": "tromso",
-        "title": "Tromsø, Norway",
-        "image": "../../assets/images/Norway_aurora_light_sky.png",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=tromso",
-        "category": "portugal"
-    },
-    {
-        "id": "niko",
-        "title": "Smile Through a Melody",
-        "image": "../../assets/images/niko.jpg",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=niko",
-        "category": "portugal"
-    },
-    { 
-        "id": "panda",
-        "title": "Panda",
-        "image": "../../assets/images/",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=panda",
-        "category": "portugal"
-    },
-    {
-        "id": "monkey",
-        "title": "High School",
-        "image": "../../assets/images/monkey.jpg",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=monkey",
-        "category": "portugal"
-    },
-    {
-        "id": "redrosemovement",
-        "title": "The Red Rose Movement",
-        "image": "../../assets/images/rrm4.png",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=redrosemovement",
-        "category": "portugal"
-    },
-    {
-        "id": "friends",
-        "title": "Friends",
-        "image": "../../assets/images/friends.JPG",
-        "description": "A branding and UX design for a startup...",
-        "link": "/portfolio/data/casestudy.html?id=friends",
-        "category": "portugal"
     }
 ]
 

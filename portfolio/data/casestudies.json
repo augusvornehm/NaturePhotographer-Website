@@ -3,914 +3,134 @@
         "comment": "Written by Augustina Vornehm"
     },
     
+
     {
-        "id": "origins-ux",
-        "title": "Origins UX – A Web Portal for a VR Museum",
-        "mainImage": "../../assets/images/originsUX.png",
-        "description": "A web experience designed to complement and enhance a VR cultural heritage museum, ensuring accessibility for all users.",
-        "website": "https://origins.scss.tcd.ie/homepage.html",
+        "id": "cliffsunset",
+        "title": "Cliff Sunset",
+        "mainImage": "../../assets/images/portugal1.jpg",
+        "description": "A golden sunset descending over Portugal's coastal cliffs, capturing the dramatic textures of the sea against steep rocky formations.",
         "content": [
             {
-                "headline": "Introduction",
-                "paragraph": "I designed and developed the website for the Origins VR Museum, ensuring a seamless connection between the immersive VR experience and an accessible online presence. The site serves as a digital gateway to cultural heritage, allowing users to explore exhibits even without a VR headset. For the full VR experience, visit origins.scss.tcd.ie or click the image below."
+                "subtitle": "Serenity in Light",
+                "description": "Shot during golden hour, this image captures nature’s contrast between warmth and rough terrain. Ideal for tranquil spaces.",
+                "primaryImage": "../../assets/images/portugal1.jpg",
+                "priceLink": "../../pages/contact.html"
             },
             {
-                "images": [
-                    {
-                        "src": "../../assets/images/origins-homepage.png",
-                        "alt": "Origins Website",
-                        "link": "https://origins.scss.tcd.ie/homepage.html"
-                    }
-                ]
+                "subtitle": "Cliff Formations",
+                "description": "Jagged formations shaped by centuries of ocean waves.",
+                "primaryImage": "../../assets/images/portugal2.jpg",
+                "priceLink": "../../pages/contact.html"
             },
             {
-                "headline": "User-Centered UX Research & Accessibility",
-                "paragraph": "The design process was guided by human-centered design principles, incorporating accessibility analysis and user research. The site ensures that users who cannot access VR due to hardware limitations, motion sickness, or other factors can still engage meaningfully with the content. Key accessibility features include keyboard navigation, screen reader support, and optimized color contrast."
+                "subtitle": "Atlantic Blue",
+                "description": "The Atlantic Ocean meets the Iberian coast in a vibrant display.",
+                "primaryImage": "../../assets/images/portugal3.jpg",
+                "priceLink": "../../pages/contact.html"
             },
             {
-                "headline": "Seamless VR-Web Transition",
-                "paragraph": "To create a unified experience, I ensured that elements from the VR museum—such as objects, audio transcriptions, and visual themes—were reflected on the website. The VR museum's audio content is transcribed so users can access the experience from home at no cost, preserving the essence of the digital exhibition."
-            },
-            {
-                "headline": "Interactive 3D Elements & Development",
-                "paragraph": "The website integrates interactive 3D elements using ModelViewer and Blender. These elements allow users to engage with cultural artifacts in a way that mimics the VR environment while ensuring smooth performance on standard web browsers."
-            },
-            {
-                "headline": "Challenges & Solutions",
-                "paragraph": "Balancing an interactive 3D experience with accessibility was a key challenge. The goal was to ensure that nothing from the VR museum was lost while making it accessible on computers. By leveraging ModelViewer, optimizing color contrast, and implementing assistive technologies, I was able to create an inclusive and immersive experience."
-            },
-            {
-                "headline": "Results & Impact",
-                "paragraph": "The project successfully bridges the gap between VR and web accessibility, extending the reach of the Origins VR Museum. By making cultural heritage more inclusive and interactive, the website enhances engagement and educational opportunities for a diverse audience."
+                "subtitle": "Shadows & Rocks",
+                "description": "Late shadows add depth to the coastline's silhouette.",
+                "primaryImage": "../../assets/images/portugal4.jpg",
+                "priceLink": "../../pages/contact.html"
             }
         ]
     },
 
     
-        {
-        "id": "pytch-ux",
-        "title": "Pytch UX – A Complete Redesign of an E-Learning Platform",
-        "mainImage": "../../assets/images/pytchUX.png",
-        "gallery": [
-            "../../assets/images/pytchUX.png",
-            "../../assets/images/pytchUX_2.png",
-            "../../assets/images/pytchUX_3.png"
-        ],
-        "description": "A full UX and UI redesign of Pytch, an e-learning platform that teaches Python to young teens. The current website is outdated in both design and structure, making it less engaging and inaccessible to visually impaired users. This project focuses on making Pytch more accessible, intuitive, and engaging for learners.",
-        "website": "https://scss.pytch.org",
+    {
+        "id": "forestmist",
+        "title": "Forest Mist",
+        "mainImage": "../../assets/images/sweden1.jpg",
+        "description": "A peaceful, foggy forest in Sweden, creating a mystic and muted atmosphere that feels timeless.",
         "content": [
             {
-                "headline": "The Problem: An Outdated & Inaccessible Platform",
-                "paragraph": "The current Pytch website (https://scss.pytch.org) lacks a modern design and has significant usability issues. Navigation is confusing, subpages are scattered, and the overall structure is unintuitive. Additionally, the platform is nearly unusable for visually impaired users due to poor contrast, lack of ARIA controls, missing screen reader support, and no keyboard navigation."
+                "subtitle": "Misty Canopy",
+                "description": "A thick fog blankets the pine trees, creating dreamlike visuals.",
+                "primaryImage": "../../assets/images/sweden1.jpg",
+                "priceLink": "../../pages/contact.html"
             },
             {
-                "headline": "Research-Driven UX Redesign",
-                "paragraph": "To guide the redesign, I conducted extensive user research and accessibility testing, including direct testing with visually impaired users. Academic research on e-learning engagement informed my design decisions to make the platform more interactive, visually engaging, and structured for better learning outcomes."
+                "subtitle": "Path Through Pines",
+                "description": "A trail winds through misty woods, inviting calm and reflection.",
+                "primaryImage": "../../assets/images/sweden2.jpg",
+                "priceLink": "../../pages/contact.html"
             },
             {
-                "headline": "Accessibility & Engagement Enhancements",
-                "paragraph": "The new design prioritizes inclusivity and engagement:\n- Accessibility Features: Full screen reader support, ARIA controls, better contrast, keyboard navigation, and zoom compatibility.\n- Engagement Improvements: A visually appealing color scheme, fun and intuitive design, and a restructured layout that makes learning feel seamless and enjoyable."
+                "subtitle": "Morning Dew",
+                "description": "Light glistens on dew-covered moss in early morning.",
+                "primaryImage": "../../assets/images/sweden3.jpg",
+                "priceLink": "../../pages/contact.html"
             },
             {
-                "headline": "A Complete Structural Overhaul",
-                "paragraph": "I reworked the entire sitemap, navigation, and information architecture to improve usability. The new design eliminates unnecessary subpages, making it easier to find key content. Users can now quickly access:\n- Lesson plans online\n- A clear tutorial layout (easy to find and navigate)\n- Help and support sections\n- A new blog and news page\n- Pytch Ambassador Program (A new feature for teachers to connect and share resources)"
-            },
-            {
-                "headline": "Design & Development Process",
-                "paragraph": "I handled the full UX and UI redesign, working in Figma and Adobe Illustrator to create wireframes and prototypes. The development will be implemented in WordPress, ensuring scalability and ease of content management."
-            },
-            {
-                "headline": "Results & Next Steps",
-                "paragraph": "The redesigned Pytch platform will be significantly more user-friendly, accessible, and engaging for young learners. The new UX strategy improves usability for both students and teachers, making it easier to find learning resources and collaborate within the community."
-            }
-        ]
-    },    
-    {
-            "id": "sagrado-secreto",
-            "title": "Sagrado Secreto De Gaudí",
-            "mainImage": "../../assets/images/sagradaUX.svg",
-            "description": "A digital experience that brings the iconic Basílica de la Sagrada Familia online, allowing users to explore its architecture, history, and cultural significance through a 3D model, interactive timeline, and multimedia content.",
-            "website": "https://sagradafamilia.org/en/home",
-            "content": [
-                {
-                    "headline": "Bridging the Gap Between Physical & Virtual Experiences",
-                    "paragraph": "The Basílica de la Sagrada Familia attracts millions of visitors each year, but it lacks a strong online experience. Our goal is to bridge this gap by creating an accessible and immersive digital experience that allows users worldwide to explore the cathedral’s architecture, historical significance, and ongoing construction process."
-                },
-                {
-                    "headline": "Website",
-                    "paragraph": "Click the image to visit website."
-                },
-                {
-                    "images": [
-                    {
-                        "src": "../../assets/images/ssdg.png",
-                        "alt": "Glamping Experience",
-                        "link": "https://wheat-echidna-268446.hostingersite.com"
-                    }
-                    ]
-                },
-                {
-                    "headline": "Why a Virtual Experience? The Post-Pandemic Shift",
-                    "paragraph": "The COVID-19 pandemic accelerated the digitization of cultural heritage institutions. Studies show that 80% of museums have expanded their digital presence, with some seeing an online engagement increase of over 200%. Despite these trends, the Sagrada Familia has a limited online presence, leaving a gap for international visitors who cannot travel to Barcelona."
-                },
-                {
-                    "headline": "Core Features of the Platform",
-                    "paragraph": "The website provides an interactive and educational experience through the following features:\n- 3D Architectural Model: Explore the cathedral’s intricate designs and hidden symbolism.\n- Interactive Timeline: Discover the evolution of the construction, from Gaudí’s original vision to modern developments.\n- Historical & Cultural Insights: Multimedia content including articles, blog posts, and video explanations.\n- Navigation & Accessibility: Easy-to-use site structure with keyboard navigation, screen reader support, and customizable settings."
-                },
-                {
-                    "headline": "Enhancing Accessibility & Usability",
-                    "paragraph": "Making the website accessible to all users was a core focus. Key improvements include:\n- Keyboard navigation: Users can explore all content without a mouse.\n- ARIA controls: Screen reader-friendly interface.\n- High-contrast mode: Improves visibility for visually impaired users.\n- Multilingual Support: Since over 82% of visitors are international, the platform offers multiple language options."
-                },
-                {
-                    "headline": "A Thoughtfully Designed User Experience",
-                    "paragraph": "The structure of the website is carefully crafted for clarity and engagement:\n- Dual Perspectives: Users can switch between an architectural view (showcasing construction phases) and a cultural view (exploring symbolism and history).\n- Navigation Menu: Includes accessibility settings and language selection.\n- Sidebar Information: Displays key facts dynamically as users explore.\n- Donation Integration: Since Sagrada Familia relies on private funding, the online visit page links to the official donation site."
-                },
-                {
-                    "headline": "Technology & Tools",
-                    "paragraph": "We used modern tools to create an engaging and high-performance experience:\n- 3D Modeling: Blender, ModelViewer\n- Frontend Animations: GSAP (GreenSock)\n- Design & UX: Figma, Adobe Illustrator, Photoshop\n- Content Development: Interactive blog & multimedia integration"
-                },
-                {
-                    "headline": "Conclusion: A Digital Future for Cultural Heritage",
-                    "paragraph": "By providing a high-quality digital experience, this project makes the Basílica de la Sagrada Familia accessible to a global audience, blending history, architecture, and technology. It serves as a model for how historical sites can expand their reach beyond physical boundaries."
-                }
-            
-            ]
-        },    
-
-    {
-        "comment": "Content Creation Starts here"
-    },
-
-    {
-        "id": "spleisure-merch",
-        "title": "Spleisure Merch",
-        "mainImage": "../../assets/images/spleisuremerch-title.png",
-        "description": "A digital creation project where I developed animations, content, and digital marketing for Spleisure Merch, focusing on creating a stylish and eco-friendly brand identity. Videos below.",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "Spleisure Merch was designed to create a unique and stylish brand identity for a new startup, focusing on modern, eco-friendly, and comfortable apparel. As a digital creator and animator, I worked to bring the brand’s concept to life through dynamic and engaging hand-drawn animations."
-            },
-            {
-                "headline": "Animations and Content Creation",
-                "paragraph": "I developed hand-drawn animations that showcased the products in a dynamic and engaging manner, focusing on the hoodie, cap, and the eco-friendly process behind Spleisure Merch. The content was created to captivate the target audience while reinforcing the eco-friendly nature of the brand."
-            },
-            {
-                "headline": "Challenges",
-                "paragraph": "The main challenge was ensuring brand consistency while producing visually compelling content. I had to balance the need for modern, attractive visuals with maintaining the eco-friendly messaging of the brand."
-            },
-            {
-                "headline": "Results",
-                "paragraph": "The animations and digital content successfully resonated with the target audience, elevating the brand’s identity and enhancing its appeal in the competitive market of eco-friendly merchandise."
-            },
-            {
-                "headline": "Video - Hoodie Showcase",
-                "paragraph": "Watch the video showcasing the comfort and style of the Spleisure Merch hoodie. The hand-drawn animation emphasizes the design, fit, and versatility of the product.",
-                "video": "../../assets/videos/Spleisure_Robin_pre-launch.mp4"
-            },
-            {
-                "headline": "Video - Cap Showcase",
-                "paragraph": "This video highlights the sleek design and functionality of the Spleisure Merch cap, showcasing its trendy look and the various ways it can be styled. The hand-drawn animation brings the product to life in a fun and dynamic way.",
-                "video": "../../assets/videos/charlie spleisure.mp4"
-            },
-            {
-                "headline": "Video - Eco-Friendly Creation",
-                "paragraph": "In this video, I explore the sustainable practices behind Spleisure Merch, emphasizing the eco-friendly materials used in the production process and how the brand supports a greener planet. The hand-drawn animation visually explains the eco-friendly creation process.",
-                "video": "../../assets/videos/spleisure-production.mp4"
+                "subtitle": "Silhouettes",
+                "description": "Tall trees become silhouettes in a thick mist.",
+                "primaryImage": "../../assets/images/sweden4.jpg",
+                "priceLink": "../../pages/contact.html"
             }
         ]
     },
     {
-        "id": "spleisure-marketing",
-        "title": "Spleisure Social Media Marketing",
-        "mainImage": "../../assets/images/spleisure11.png",
-        "description": "A content creation and social media marketing project for Spleisure, where I developed dynamic photos, illustrations, and edits to elevate their online presence and engage with their audience.",
+        "id": "reindeertrack",
+        "title": "Reindeer Tracks",
+        "mainImage": "../../assets/images/finland1.jpg",
+        "description": "A minimalistic winter capture in Finland — snow trails that tell a quiet story.",
         "content": [
             {
-                "headline": "Introduction",
-                "paragraph": "To enhance Spleisure's social media presence, I crafted dynamic and engaging content aimed at building a stronger online identity. The content featured dynamic photos, custom illustrations, and edited visuals, aimed at creating an immersive brand experience.",
-                "primaryImage": "../../assets/images/spleisure4.jpeg",
-                "secondaryImage": "../../assets/images/spleisure13.png"
+                "subtitle": "Silent Steps",
+                "description": "Fresh prints marking the snow in the early hours.",
+                "primaryImage": "../../assets/images/finland1.jpg",
+                "priceLink": "../../pages/contact.html"
             },
             {
-                "headline": "Challenges",
-                "paragraph": "The challenge was to produce content that was not only visually captivating but also resonated with the target audience. I had to balance creative, engaging visuals with the brand’s core values—eco-friendliness and modern style—while maintaining consistency across social media platforms.",
-                "primaryImage": "../../assets/images/spleisure1.jpeg",
-                "secondaryImage": "../../assets/images/spleisure3.jpeg",
-                "tertiaryImage": "../../assets/images/spleisure11.png"
+                "subtitle": "Frozen Patterns",
+                "description": "Wind shapes the snow into art-like curves.",
+                "primaryImage": "../../assets/images/finland2.jpg",
+                "priceLink": "../../pages/contact.html"
             },
             {
-                "headline": "Results",
-                "paragraph": "Through dynamic photo shoots, edits, and custom illustrations, I successfully boosted the brand's visibility and engagement on social media platforms. The visual content resonated with the audience, resulting in a measurable increase in brand awareness, engagement, and follower growth.",
-                "primaryImage": "../../assets/images/spleisure5.jpeg",
-                "secondaryImage": "../../assets/images/spleisure6.jpeg",
-                "tertiaryImage": "../../assets/images/spleisure7.jpeg"
+                "subtitle": "Northern White",
+                "description": "Endless snowfields under a grey northern sky.",
+                "primaryImage": "../../assets/images/finland3.jpg",
+                "priceLink": "../../pages/contact.html"
+            },
+            {
+                "subtitle": "Subarctic Silence",
+                "description": "Stillness and open space define the moment.",
+                "primaryImage": "../../assets/images/finland4.jpg",
+                "priceLink": "../../pages/contact.html"
             }
         ]
     },
     {
-        "id": "biggestfear",
-        "title": "Biggest Fear Video Production",
-        "mainImage": "../../assets/images/biggestfear-title.jpg",
-        "gallery": [],
-        "description": "A creative video production project where I conducted interviews with 15 people to create a motivational video around the theme of 'Biggest Fear.' I handled all aspects of the production, including filming, editing, audio, masking, and color correction.",
+        "id": "fjordlight",
+        "title": "Fjord Light",
+        "mainImage": "../../assets/images/norway1.jpg",
+        "description": "Glacial light hitting the serene water of a fjord, reflecting Norway’s breathtaking beauty.",
         "content": [
             {
-                "headline": "Introduction",
-                "paragraph": "The project involved interviewing 15 people about their 'Biggest Fear,' and my task was to translate their emotions into a powerful, motivational video. I was responsible for the entire production, including filming, editing, audio design, and visual effects, with the goal of creating a compelling narrative that resonated with the audience."
+                "subtitle": "Blue Reflection",
+                "description": "The still water mirrors the sky’s color palette.",
+                "primaryImage": "../../assets/images/norway1.jpg",
+                "priceLink": "../../pages/contact.html"
             },
             {
-                "headline": "Challenges",
-                "paragraph": "The main challenge was balancing the artistic vision with the client’s requirements. I had to ensure that each interviewee's story was captured authentically while aligning with the overall message of overcoming fear and resilience. Additionally, the technical aspects of filming, editing, audio design, and color grading required careful attention to ensure a cohesive final product."
+                "subtitle": "Mountains Meet Water",
+                "description": "Snow-capped peaks descend into the fjord’s calm surface.",
+                "primaryImage": "../../assets/images/norway2.jpg",
+                "priceLink": "../../pages/contact.html"
             },
             {
-                "headline": "Results",
-                "paragraph": "The result was a motivational video that successfully conveyed the emotional impact of each interviewee’s fear and how they overcame it. The video resonated deeply with viewers, inspiring them to confront their own fears. My role in the video production process, including filming, editing, audio design, masking, and color grading, contributed to a polished and impactful final product."
+                "subtitle": "Crystal Hour",
+                "description": "Golden rays bounce across glacial waters.",
+                "primaryImage": "../../assets/images/norway3.jpg",
+                "priceLink": "../../pages/contact.html"
             },
             {
-                "headline": "Video",
-                "paragraph": "Watch the motivational video that showcases the final production, featuring inspiring stories of overcoming fear.",
-                "video": "../../assets/videos/BiggestFear.MP4"
-            }
-        ]
-    },
-    {
-        "id": "akrafjorden",
-        "title": "Åkrafjorden Glamping Content",
-        "mainImage": "../../assets/images/akrafjorden-wide.HEIC",
-        "description": "A content creation project focused on capturing high-quality photography for social media marketing, showcasing the beauty of Åkrafjorden's glamping experience.",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "I was commissioned to capture visually engaging content for Åkrafjorden Glamping, with a focus on photography designed specifically for social media marketing. The goal was to highlight the breathtaking scenery, the luxurious glamping setup, and the overall experience to attract potential visitors. Through carefully composed shots, I showcased the harmony between nature and comfort, emphasizing the serene and exclusive atmosphere of the location."
-            },
-            {
-                "headline": "Final Photos & Post",
-                "paragraph": "Below are three of the final images used in Åkrafjorden Glamping’s social media campaigns, showcasing the stunning scenery and luxurious experience. Click on the Instagram image to see the post."
-            },
-            {
-            "images": [
-            {
-                "src": "../../assets/images/akrafjorden.HEIC",
-                "alt": "Glamping Experience",
-                "link": "null"
-            },
-            {
-                "src": "../../assets/images/akrafjorden2.jpg",
-                "alt": "Glamping Experience",
-                "link": "null"
-            },
-            {
-                "src": "../../assets/images/akrafjorden-IG.png",
-                "alt": "Glamping Experience",
-                "link": "https://www.instagram.com/p/CmT4Qexsx7C/?img_index=6"
-            }
-            ]
-            }
-        ]
-    },    
-    {
-        "id": "carilo-video",
-        "title": "AirBnB Shoot Argentina",
-        "mainImage": "../../assets/images/marienburg-wide.jpg",
-        "gallery": [
-            "../../assets/images/akrafjorden.HEIC"
-        ],
-        "description": "A photo and video shoot for an Airbnb glamping experience, capturing the essence of nature with drone videography, photography, and post-production editing.",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "I was tasked with capturing the essence of nature and the unique glamping experiences offered by an Airbnb property in Argentina. The project involved both aerial and ground-level footage, utilizing drone videography and photography to showcase the stunning natural landscapes surrounding the property. My role included scripting the shoot, directing, and executing both video and photo capture, followed by post-production editing and color correction to bring the visual concept to life."
-            },
-            {
-                "headline": "Drone Videography and Photography",
-                "paragraph": "A key feature of this shoot was the use of drone videography and photography to provide a breathtaking aerial view of the Airbnb property and its surrounding nature. The goal was to highlight the immersive experience of glamping, blending luxury with the beauty of nature. I captured stunning wide shots of the landscape and close-ups of the glamping facilities, all from a unique aerial perspective."
-            },
-            {
-                "headline": "Editing and Color Correction",
-                "paragraph": "In the post-production phase, I handled video editing and color correction to ensure the final product was visually stunning and cohesive. The challenge was to maintain the natural feel of the outdoor environment while highlighting the luxury aspects of the property. This required careful attention to detail, especially with the drone footage, which needed engaging transitions and proper color grading to reflect the natural lighting and beauty of the location, as well as the vibrant vibes of the town during high season that everyone loves.",
-                "primaryImage": "../../assets/images/marienburg.jpg",
-                "secondaryImage": "../../assets/images/marienburg2.jpg",
-                "tertiaryImage": "../../assets/images/marienburg3.jpg"
-            },
-            {
-                "headline": "Scripting and Final Video",
-                "paragraph": "I also took on the role of scripting the video to ensure that it not only captured the beauty of the environment but also communicated the lifestyle of the Airbnb experience. The video was designed to evoke emotions of tranquility and adventure, highlighting the unique blend of nature and comfort. The result is a promotional video that perfectly conveys the beach house for potential Airbnb guests."
-            },
-            {
-                "headline": "Final Video",
-                "paragraph": "Watch the video with drone shots, nature views, and the beauty of the Airbnb property in a rare forrest at the coast of Argentina.",
-                "video": "../../assets/videos/marienburg.mov"
-            }
-        ]
-    },    
-    {
-        "id": "lofoten",
-        "title": "Hattvika Lodge Video Production",
-        "mainImage": "../../assets/images/lofoten-wide.jpg",
-        "gallery": [
-            "../../assets/images/lofoten1.jpg"
-        ],
-        "description": "A high-impact video marketing project showcasing the Hattvika Lodge experience and the breathtaking beauty of Lofoten. The video was created for social media campaigns on Instagram and YouTube, as well as a giveaway promotion.",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "I was commissioned to create a compelling three-minute video capturing the full experience of staying at Hattvika Lodge and exploring the stunning landscapes of Lofoten. The goal was to craft an engaging and cinematic narrative that would attract visitors and highlight the adventure, relaxation, and beauty the location offers.",
-                "primaryImage": "../../assets/images/nussfjord1.JPG",
-                "secondaryImage": "../../assets/images/lofoten1.jpeg",
-                "tertiaryImage": "../../assets/images/lofoten2.jpeg"
-            },
-            {
-                "headline": "Production & Creative Process",
-                "paragraph": "From pre-production to final editing, I handled all aspects of the video, including scripting, cinematography, color grading, and post-production. The shoot included a mix of breathtaking landscapes, action sequences, and immersive storytelling to showcase the essence of a visit to Lofoten. Additionally, I took part in some acting elements to enhance the authenticity and relatability of the video."
-            },
-            {
-                "headline": "Social Media Impact",
-                "paragraph": "The final video was a huge success, generating high engagement across Instagram and YouTube. It played a crucial role in Hattvika Lodge's marketing efforts, increasing brand awareness and inspiring potential visitors. The video was also used for a special giveaway campaign, further boosting audience interaction."
-            },
-            {
-                    "headline": "Final Video",
-                    "paragraph": "Watch the full video below."
-            },
-            {
-            "images": [
-                {
-                    "src": "../../assets/images/hattvika-IG.png",
-                    "alt": "Hattvika Lodge, Lofoten, Norway",
-                    "link": "https://www.instagram.com/tv/CbVrdY8grFL/?igshid=ZWZhZTRhOWQ%3D"
-                }
-            ]
-            }
-        ]
-    },    
-    {
-        "id": "bergenshoot",
-        "title": "Golden Hour Portrait Shoot in Bergen",
-        "mainImage": "../../assets/images/j&j-wide.png",
-        "gallery": [
-            "../../assets/images/bergen.jpg"
-        ],
-        "description": "A spontaneous and creative portrait shoot capturing warm natural light and expressive moments.",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "This was a fun and impromptu portrait shoot in Bergen, taking advantage of the golden hour light to create a warm, glowing effect. The goal was to capture natural expressions and the beauty of soft sunlight interacting with the subject."
-            },
-            {
-                "headline": "Lighting & Composition",
-                "paragraph": "The session focused on using direct sunlight to enhance depth and mood, playing with shadows and highlights to add an artistic touch. A mix of close-up and mid-range shots allowed for a variety of compositions, emphasizing both the subject's features and the dramatic light play."
-            },
-            {
-                "headline": "Final Edits",
-                "paragraph": "Post-processing was kept minimal, focusing on enhancing the natural tones of the sunlight while keeping the skin tones true to life. The result was a series of visually striking yet effortlessly natural portraits.",
-                "primaryImage": "../../assets/images/j&j1.jpg",
-                "secondaryImage": "../../assets/images/j&j.jpeg",
-                "tertiaryImage": "../../assets/images/j&j2.JPG"
-            }
-        ]
-    },    
-    {
-        "id": "arcticcircle",
-        "title": "Arctic Circle Adventure",
-        "mainImage": "../../assets/images/arcticcircle.jpg",
-        "gallery": [
-            "../../assets/images/arcticcircle.jpg"
-        ],
-        "description": "A fun and immersive photography project capturing the beauty of the Arctic Circle and the people experiencing it.",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "This project was all about capturing the excitement and beauty of traveling through the Arctic Circle. From stunning landscapes to candid moments with friends, the journey combined breathtaking nature with the warmth of human connection."
-            },
-            {
-                "headline": "Photography Approach",
-                "paragraph": "The shoot focused on a mix of landscape and portrait photography. Wide shots showcased the vast, icy surroundings, while close-ups captured the joy, curiosity, and sense of adventure of those exploring it."
-            },
-            {
-                "headline": "Final Touches",
-                "paragraph": "The photos were edited to bring out the rich contrast of the Arctic scenery, enhancing the crisp blues and whites of the environment while keeping the natural warmth of the people in the frame. The result was a collection that tells a story of both adventure and friendship.",
-                "primaryImage": "../../assets/images/arcticcircle.jpg",
-                "secondaryImage": "../../assets/images/arcticcircle1.jpeg",
-                "tertiaryImage": "../../assets/images/arcticcircle3.jpeg"
-            },
-            {
-                "secondaryImage": "../../assets/images/leon.jpeg"
-            }
-        ]
-    },    
-    {
-        "id": "aurora",
-        "title": "Northern Lights",
-        "mainImage": "../../assets/images/aurora2.JPG",
-        "gallery": [
-            "../../assets/images/aurora1.jpg",
-            "../../assets/images/aurora2.jpg",
-            "../../assets/images/aurora3.jpg"
-        ],
-        "description": "A collection of stunning Northern Lights photography capturing the magic of the Arctic night sky in Norway.",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "This project focused on capturing the breathtaking aurora borealis across Norway’s Arctic regions. The ever-shifting green, purple, and blue lights painted the sky, creating a mesmerizing visual experience."
-            },
-            {
-                "headline": "The Experience",
-                "paragraph": "Photographing the Northern Lights required patience and skill—waiting for the perfect moment when the auroras danced at their brightest. The experience was made even more special by sharing it with friends under the crisp Arctic sky."
-            },
-            {
-                "headline": "Photography & Editing",
-                "paragraph": "The photos were taken using long-exposure techniques to enhance the vivid colors and movement of the lights. Post-processing helped refine the contrast, bringing out the depth of the night sky while preserving the natural beauty of the scene.",
-                "primaryImage": "../../assets/images/aurorafriends.jpg",
-                "secondaryImage": "../../assets/images/aurora3.JPG",
-                "tertiaryImage": "../../assets/images/aurora2.JPG"
-            },
-            {
-                "primaryImage": "../../assets/images/aurora1.JPG",
-                "secondaryImage": "../../assets/images/aurora4.JPG"
-            },
-            {
-                "headline": "Short Video",
-                "video": "../../assets/videos/aurora.mov"
-            }
-        ]
-    },
-    {
-        "id": "3peeks",
-        "title": "Hawai'i's Craters",
-        "mainImage": "../../assets/images/crater1.JPG",
-        "gallery": [
-            "../../assets/images/hawaiicrater1.JPG",
-            "../../assets/images/hawaiicrater2.JPG",
-            "../../assets/images/hawaiicrater3.JPG"
-        ],
-        "description": "A journey through the volcanic craters, ridgelines, and waterfalls of Oahu. Every moment felt like I was living the natural beauty that surrounds us, and that's what I was trying to capture.",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "Hiking through Oahu’s volcanic craters was an incredible experience. It wasn’t just about the hike itself but about soaking in the beauty of the landscape at every turn—feeling the mist, hearing the wind, and capturing it all through my lens. With my camera and drone in hand, I was able to see this place from so many different perspectives, each one more breathtaking than the last."
-            },
-            {
-                "headline": "The Experience",
-                "paragraph": "The day felt both challenging and rewarding. From climbing up waterfalls to walking along narrow ridgelines, there was always something new to see. The craters, with their vastness and raw beauty, seemed to stretch on forever. I couldn’t help but be amazed by how the ocean and land came together—sometimes it felt like nature was speaking in a language only the mountains and sea understood. With my drone shots, I got to capture this vastness, showing how the land curves and flows in a way that can’t always be fully grasped from the ground.",
-                "primaryImage": "../../assets/images/crater1.JPG",
-                "secondaryImage": "../../assets/images/hawaiicrater.JPG",
-                "tertiaryImage": "../../assets/images/crater4.jpg"
-            }
-        ]
-    },    
-    {
-        "id": "hawaii",
-        "title": "Life in Oahu, Hawaii",
-        "mainImage": "../../assets/images/oahu-wide.JPG",
-        "description": "A personal journey through Oahu’s beauty, capturing the essence of island life, filled with memories, sunsets, and dreams.",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "There’s something about Oahu that feels like home, even if you’ve never been there before. Maybe it’s the way the mountains meet the ocean or how the sunsets feel like a secret just for you. I used to say I was stranded on an island full of memories, but honestly, I don’t think I’d have it any other way. The island’s magic isn’t in its perfection—it’s in its simplicity, in the people, the pace, and the endless beauty that surrounds you every single day."
-            },
-            {
-                "headline": "Living the Dream",
-                "paragraph": "Each day felt like living in a daydream. Waking up to the sound of the waves crashing, the sun already warm on your skin. There was no rush. No agenda. Just the quiet joy of walking barefoot on the beach, or grabbing a board and catching a wave. Even the hardest days felt light because, here, life was simpler. I documented everything—the little moments that made the island feel so alive: the golden sunsets, kids playing in the surf, the way the sun dipped behind the mountains as the world slowed down."
-            },
-            {
-                "headline": "A Place to Be Still",
-                "paragraph": "Oahu isn’t just a place to visit—it’s a place to feel. Whether I was hiking up the lush mountains or standing on a cliff watching the waves crash below, I felt deeply connected to something bigger. It wasn’t about ticking boxes or seeing all the sights—it was about taking the time to soak in the beauty that was everywhere. I’d always wanted to capture the island’s soul, and through photos, drone shots, and video, I found a way to share that feeling—the magic of being truly present on an island full of stories waiting to be told.",
-                "primaryImage": "../../assets/images/oahu.JPG",
-                "secondaryImage": "../../assets/images/beachsunset.jpg",
-                "tertiaryImage": "../../assets/images/hawaii1.jpg"
-            },
-            {
-                "primaryImage": "../../assets/images/hawaii4.jpg",
-                "secondaryImage": "../../assets/images/hawaii3.jpg",
-                "tertiaryImage": "../../assets/images/hawaii2.jpg"
-            }
-        ]
-    },
-    {
-        "id": "argentina",
-        "title": "Argentina Road Trip",
-        "mainImage": "../../assets/images/perito-moreno.JPG",
-        "gallery": [
-            "../../assets/images/aurorafriends.jpg"
-        ],
-        "description": "This wasn’t just a road trip—it was a return to my roots, a love letter to a land that feels like part of me. From the breathtaking glaciers of Patagonia to the soulful streets of Buenos Aires, Argentina is where my heart is. Every mile, every moment, every person—it’s home, in every sense of the word.",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "Argentina isn’t just a country to me—it’s *my* home. It’s in my veins. From the moment I hit the road in the south, surrounded by Patagonia’s glaciers and endless horizons, I felt like I was reuniting with something deep within me. Each step, each photograph, was a love letter to the land that lives within me. (Not to be biased) but it is one of the most beautiful sceneries in the world ;)"
-            },
-            {
-                "headline": "Photography, Drone & Editing",
-                "paragraph": "When I was taking photos, I wasn’t thinking about getting the perfect shot. I just wanted to capture how I felt in that moment. I wanted the photos to remind me of the light, the colors, the warmth of the land. The drone let me show just how huge and beautiful these places are, but in a way that felt personal. When I edited, I didn’t want to change anything. I just wanted to bring out what I saw with my own eyes, to hold on to that feeling of being there."
-            }
-        ]
-    },
-    {
-        "id": "geiranger",
-        "title": "Geiranger, Norway",
-        "mainImage": "../../assets/images/skagefla.JPG",
-        "gallery": [
-            "../../assets/images/aurorafriends.jpg"
-        ],
-        "description": "Geiranger and Loen are quiet and beautiful places that bring a sense of peace. The drive through these fjords and the boat trip to Skagefla were highlights of my time in Norway. It was a simple journey that left me feeling grateful for nature’s beauty.",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "I had always wanted to visit Geiranger, and when I finally made it, I was amazed at how peaceful it felt. The fjords and mountains were so calm, and the boat ride to Skagefla offered a perfect view of the landscape. It was one of those moments when you just sit back and appreciate everything around you."
-            },
-            {
-                "headline": "The Experience",
-                "paragraph": "Driving through the winding roads of Geiranger and Loen was such a quiet experience. The scenery was beautiful but not in an overwhelming way—just pure and natural. The boat trip was a great way to take it all in from a different perspective, and I enjoyed the calm waters and surrounding mountains."
-            },
-            {
-                "headline": "Photography, Drone & Editing",
-                "paragraph": "I took a few photos to capture the views and the fun experience we had on the weekend roadtrip, focusing on the simplicity of the place. When editing, I just tried to keep the feeling of peace and quiet that I felt while I was there.",
-                "primaryImage": "../../assets/images/skagefla.JPG",
-                "tertiaryImage": "../../assets/images/geiranger-kayak.JPG"
-            }
-        ]
-    },    
-
-    {
-        "comment": "Illustrations Starts here"
-    },
-
-    {
-        "comment": "Illustrations Starts here"
-    },
-    
-    {
-        "id": "whale",
-        "title": "Dreaming Whale",
-        "mainImage": "../../assets/images/whale.png",
-        "description": "A digtal illustration of a flying whale in front of a red mood. This stands for dreaming big, being creative, and following dreams, however crazy they seem to others.",
-        "content": [
-            {
-                "primaryImage": "../../assets/images/whale.png"
-            }
-        ]
-    },
-    {
-        "id": "astronaut",
-        "title": "Chasing Dreams",
-        "mainImage": "../../assets/images/astronaut5.png",
-        "description": "A series of digital illustrations reflecting my love for dreaming big, doing what I set my mind to, and representing the book *Wonder*, where the main character is also named August. The astronaut is a self-representation, symbolizing the endless pursuit of possibility. A poem accompanies the artwork, reflecting on the importance of getting up when you fall and continuing to chase your dreams, no matter the obstacles.",
-        "content": [
-            {
-                "primaryImage": "../../assets/images/Unbenanntes_Projekt 3.png",
-                "secondaryImage": "../../assets/images/Unbenanntes_Projekt 4.png",
-                "tertiaryImage": "../../assets/images/astronaut5.png"
-            },
-            {
-                "primaryImage": "../../assets/images/Unbenanntes_Projekt 6.png",
-                "secondaryImage": "../../assets/images/Unbenanntes_Projekt 7.png",
-                "tertiaryImage": "../../assets/images/Unbenanntes_Projekt 8.png"
-            }
-        ]
-    },
-    {
-        "id": "tromso",
-        "title": "Tromsø, Norway",
-        "mainImage": "../../assets/images/Norway_aurora_light_sky.png",
-        "description": "A digital illustration of the northern lights over Tromsø, Norway, capturing the mesmerizing colors and the beauty of the Arctic sky. A memory shared with friends, standing under the auroras, marveling at the beauty of the world.",
-        "content": [
-            {
-                "primaryImage": "../../assets/images/Norway_aurora_light_sky.png"
-            }
-        ]
-    },
-    {
-        "id": "niko",
-        "title": "Smile Through a Melody",
-        "mainImage": "../../assets/images/niko.jpg",
-        "description": "A spray-painted image of my brother, lost in his music, smiling as he plays the guitar. My brother is at his purest when playing music, and this piece captures that joy and the beauty of being in the moment with a guitar in hand.",
-        "content": [
-            {
-                "primaryImage": "../../assets/images/niko2.JPG",
-                "secondaryImage": "../../assets/images/niko3.jpg",
-                "tertiaryImage": "../../assets/images/niko.jpg"
-            }
-        ]
-    },
-    {
-        "id": "panda",
-        "title": "Panda",
-        "mainImage": "../../assets/images/",
-        "description": "A minimalist spray-painted artwork of a panda on cardboard. The simplicity of the design reflects the purity and innocence we often associate with childhood.",
-        "content": [
-            {
-                "primaryImage": "../../assets/images/monkey.jpg"
-            }
-        ]
-    },
-    {
-        "id": "monkey",
-        "title": "High School",
-        "mainImage": "../../assets/images/monkey.jpg",
-        "description": "A spray-paint artwork of a monkey smoking a banana. A playful, yet reflective piece that speaks to the rebellious nature and carefree attitude of high school days.",
-        "content": [
-            {
-                "primaryImage": "../../assets/images/monkey1.JPG",
-                "secondaryImage": "../../assets/images/monkey2.JPG",
-                "tertiaryImage": "../../assets/images/monkey.jpg"
-            }
-        ]
-    },
-    {
-        "id": "redrosemovement",
-        "title": "The Red Rose Movement",
-        "mainImage": "../../assets/images/rrm4.png",
-        "description": "A spray-painted artwork made during the global pandemic. The movement, which spread worldwide via social media, called for love and unity in the face of hardship. It shows Mickey Mouse holding a rose as a gun, symbolizing a call for kindness amidst the chaos. This artwork was printed on stickers and masks and shared around the world, with the movement growing online. Thousands of people participated, putting the stickers in cities globally, and the masks were shipped worldwide as part of the movement to spread love, not the virus.",
-        "content": [
-            {
-                "primaryImage": "../../assets/images/rrm1.jpg",
-                "secondaryImage": "../../assets/images/rrm2.jpg",
-                "tertiaryImage": "../../assets/images/rrm4.png"
-            }
-        ]
-    },
-    {
-        "id": "friends",
-        "title": "Friends",
-        "mainImage": "../../assets/images/friends.JPG",
-        "description": "A collage of my friends' faces, representing the diverse cultures, genders, and sexualities in our global friend group. It celebrates our shared love, support, and the beauty of unity despite our differences.",
-        "content": [
-            {
-                "primaryImage": "../../assets/images/friends.JPG"
-            }
-        ]
-    },
-    {
-        "id": "geiranger-illustration",
-        "title": "Geiranger Trail",
-        "mainImage": "../../assets/images/Geiranger.PNG",
-        "description": "A digital illustration of a hike through the stunning Geiranger fjord. This artwork captures the natural beauty of Norway, its breathtaking landscapes, and the peaceful solitude of nature.",
-        "content": [
-            {
-                "primaryImage": "../../assets/images/Geiranger.PNG"
-            }
-        ]
-    },
-    {
-        "id": "astronautmoon",
-        "title": "Music Takes You Flying",
-        "mainImage": "../../assets/images/headphones.png",
-        "description": "A digital illustration of an astronaut on the moon, playing the guitar. The music, like a flight, lifts the soul beyond the stars. This design was created for my headphones, reflecting how music can transport us to new worlds.",
-        "content": [
-            {
-                "primaryImage": "../../assets/images/headphones.png"
-            }
-        ]
-    },
-    {
-        "id": "overwhelmed",
-        "title": "Overwhelmed",
-        "mainImage": "../../assets/images/overwhelmed1.jpg",
-        "description": "A watercolor painting of me under rain clouds, overwhelmed by the pressures of grad school and constant moving. A reflection on the anxiety and stress that come with these transitions.",
-        "content": [
-            {
-                "primaryImage": "../../assets/images/overwhelmed1.jpg"
-            }
-        ]
-    },
-    {
-        "id": "mickey-color",
-        "title": "Childhood",
-        "mainImage": "../../assets/images/colordisney.jpg",
-        "description": "An acrylic on canvas artwork of Mickey Mouse, a childhood icon, painted in vibrant colors. This piece represents the joy and simplicity of childhood memories.",
-        "content": [
-            {
-                "primaryImage": "../../assets/images/colordisney1.jpg",
-                "secondaryImage": "../../assets/images/colordisney3.JPG",
-                "tertiaryImage": "../../assets/images/colordisney.JPG"
-            }
-        ]
-    },
-    {
-        "id": "beast",
-        "title": "Beast Apparel",
-        "mainImage": "../../assets/images/beast.jpg",
-        "description": "A teddy bear drawn and printed on a hoodie, symbolizing strength and courage. This artwork was created by me and printed on hoodies that I made myself. It is a contrast between childhood (the teddy bear) and adulthood (the roughness and paint), reflecting the growth and evolution we experience as we navigate life. The hoodies were sold worldwide, even reaching Japan.",
-        "content": [
-            {
-                "primaryImage": "../../assets/images/beast2.JPG",
-                "secondaryImage": "../../assets/images/beast.jpg",
-                "tertiaryImage": "../../assets/images/beast3.jpg"
-            }
-        ]
-    },    
-
-
-
-    {
-        "comment": "Graphic Design Starts here"
-    },
-
-
-    {
-        "id": "couchpotato",
-        "title": "Couch Potato App",
-        "mainImage": "../../assets/images/couchpotato_logo_square.png",
-        "gallery": [
-            "../../assets/images/aurorafriends.jpg"
-        ],
-        "description": "A branding and UX design for a startup...",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "A mesmerizing display of the aurora borealis in the Arctic sky.",
-                "primaryImage": "../../assets/images/aurorafriends.jpg",
-                "secondaryImage": "../../assets/images/aurorafriends.jpg",
-                "tertiaryImage": "../../assets/images/aurorafriends.jpg"
-            }
-        ]
-    },
-    {
-        "id": "sciencegallery",
-        "title": "The Science Gallery",
-        "mainImage": "../../assets/images/Logo Science Gallery_Logo 05- 600 x 600 px.png",
-        "gallery": [
-            "../../assets/images/aurorafriends.jpg"
-        ],
-        "description": "A branding and UX design for a startup...",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "A mesmerizing display of the aurora borealis in the Arctic sky.",
-                "primaryImage": "../../assets/images/aurorafriends.jpg",
-                "secondaryImage": "../../assets/images/aurorafriends.jpg",
-                "tertiaryImage": "../../assets/images/aurorafriends.jpg"
-            }
-        ]
-    },
-    {
-        "id": "avalanche",
-        "title": "Avalanche Marketing",
-        "mainImage": "../../assets/images/Avalanche Logo Orange.png",
-        "gallery": [
-            "../../assets/images/aurorafriends.jpg"
-        ],
-        "description": "A branding and UX design for a startup...",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "A mesmerizing display of the aurora borealis in the Arctic sky.",
-                "primaryImage": "../../assets/images/aurorafriends.jpg",
-                "secondaryImage": "../../assets/images/aurorafriends.jpg",
-                "tertiaryImage": "../../assets/images/aurorafriends.jpg"
-            }
-        ]
-    },
-    {
-        "id": "pytch",
-        "title": "Pytch - Python Learning Platform",
-        "mainImage": "../../assets/images/Pytch-logo.png",
-        "gallery": [
-            "../../assets/images/aurorafriends.jpg"
-        ],
-        "description": "A branding and UX design for a startup...",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "A mesmerizing display of the aurora borealis in the Arctic sky.",
-                "primaryImage": "../../assets/images/aurorafriends.jpg",
-                "secondaryImage": "../../assets/images/aurorafriends.jpg",
-                "tertiaryImage": "../../assets/images/aurorafriends.jpg"
-            }
-        ]
-    },
-    {
-        "id": "origins",
-        "title": "Origins - The VR Immersion on Web",
-        "mainImage": "../../assets/images/origins logo.png",
-        "gallery": [
-            "../../assets/images/aurorafriends.jpg"
-        ],
-        "description": "A branding and UX design for a startup...",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "A mesmerizing display of the aurora borealis in the Arctic sky.",
-                "primaryImage": "../../assets/images/aurorafriends.jpg",
-                "secondaryImage": "../../assets/images/aurorafriends.jpg",
-                "tertiaryImage": "../../assets/images/aurorafriends.jpg"
-            }
-        ]
-    },
-    {
-        "id": "acrossproperty",
-        "title": "Accross Property",
-        "mainImage": "../../assets/images/Across Property Visitenkarten2_Vorderseite 2.png",
-        "gallery": [
-            "../../assets/images/aurorafriends.jpg"
-        ],
-        "description": "A branding and UX design for a startup...",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "A mesmerizing display of the aurora borealis in the Arctic sky.",
-                "primaryImage": "../../assets/images/aurorafriends.jpg",
-                "secondaryImage": "../../assets/images/aurorafriends.jpg",
-                "tertiaryImage": "../../assets/images/aurorafriends.jpg"
-            }
-        ]
-    },
-    {
-        "id": "everywear",
-        "title": "Everywear Norway - Poster",
-        "mainImage": "../../assets/images/EWNorwayauroraposter.png",
-        "gallery": [
-            "../../assets/images/aurorafriends.jpg"
-        ],
-        "description": "A branding and UX design for a startup...",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "A mesmerizing display of the aurora borealis in the Arctic sky.",
-                "primaryImage": "../../assets/images/aurorafriends.jpg",
-                "secondaryImage": "../../assets/images/aurorafriends.jpg",
-                "tertiaryImage": "../../assets/images/aurorafriends.jpg"
-            }
-        ]
-    },
-
-
-
-    {
-        "comment": "3d Starts here"
-    },
-
-
-
-    {
-        "id": "andysroom",
-        "title": "Toy Story's Andy's Room x Mario Cart",
-        "mainImage": "../../assets/images/AndysRoom3.png",
-        "gallery": [
-            "../../assets/images/aurorafriends.jpg"
-        ],
-        "description": "A branding and UX design for a startup...",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "A mesmerizing display of the aurora borealis in the Arctic sky.",
-                "primaryImage": "../../assets/images/aurorafriends.jpg",
-                "secondaryImage": "../../assets/images/aurorafriends.jpg",
-                "tertiaryImage": "../../assets/images/aurorafriends.jpg"
-            }
-        ]
-    },
-    {
-        "id": "island",
-        "title": "Augus' Dream Island",
-        "mainImage": "../../assets/images/originsUX.png",
-        "gallery": [
-            "../../assets/images/aurorafriends.jpg"
-        ],
-        "description": "A branding and UX design for a startup...",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "A mesmerizing display of the aurora borealis in the Arctic sky.",
-                "primaryImage": "../../assets/images/aurorafriends.jpg",
-                "secondaryImage": "../../assets/images/aurorafriends.jpg",
-                "tertiaryImage": "../../assets/images/aurorafriends.jpg"
-            }
-        ]
-    },
-    {
-        "id": "origins3d",
-        "title": "Origins - The VR Immersion",
-        "mainImage": "../../assets/images/originsUX.png",
-        "gallery": [
-            "../../assets/images/aurorafriends.jpg"
-        ],
-        "description": "A branding and UX design for a startup...",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "A mesmerizing display of the aurora borealis in the Arctic sky.",
-                "primaryImage": "../../assets/images/aurorafriends.jpg",
-                "secondaryImage": "../../assets/images/aurorafriends.jpg",
-                "tertiaryImage": "../../assets/images/aurorafriends.jpg"
-            }
-        ]
-    },
-    {
-        "id": "chess",
-        "title": "Photorealistic Room",
-        "mainImage": "../../assets/images/chess1.jpeg",
-        "gallery": [
-            "../../assets/images/aurorafriends.jpg"
-        ],
-        "description": "A branding and UX design for a startup...",
-        "content": [
-            {
-                "headline": "Introduction",
-                "paragraph": "A mesmerizing display of the aurora borealis in the Arctic sky.",
-                "primaryImage": "../../assets/images/aurorafriends.jpg",
-                "secondaryImage": "../../assets/images/aurorafriends.jpg",
-                "tertiaryImage": "../../assets/images/aurorafriends.jpg"
+                "subtitle": "Fjord Breath",
+                "description": "A low mist creeps across the water at dawn.",
+                "primaryImage": "../../assets/images/norway4.jpg",
+                "priceLink": "../../pages/contact.html"
             }
         ]
     }

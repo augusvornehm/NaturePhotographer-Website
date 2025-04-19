@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christoph Vornehm Photography</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../scripts/jquery.js" defer></script> <!-- Keep script inside head or at the end of body -->
+    <script src="../scripts/load-projects.js"></script>
 </head>
 <body>
     <header>
@@ -37,33 +36,17 @@
             </svg>
         </a>        
     </section>    
-    <!-- Portfolio Section -->
+    
+     <!-- Portfolio Section -->
     <section class="portfolio">
-        <h2>Finland thorugh my lens</h2>
-        <div class="portfolio-grid">
+        <h2>Projects</h2>
 
-            <!-- Portfolio Item 1 -->
-            <div class="portfolio-piece-item-illustrations">
-                <img src="../assets/images/fox.png" alt="Project 1" class="portfolio-piece-img">
-            </div>
-
-            <!-- Portfolio Item 2 -->
-            <div class="portfolio-piece-item-illustrations">
-                <img src="../assets/images/home-title.png" alt="Project 2" class="portfolio-piece-img">
-            </div>
-
-            <!-- Portfolio Item 3 -->
-            <div class="portfolio-piece-item-illustrations">
-                <img src="../assets/images/hero-title.png" alt="Project 3" class="portfolio-piece-img">
-            </div>
-
-            <!-- Portfolio Item 4 -->
-            <div class="portfolio-piece-item-illustrations">
-                <img src="../assets/images/game4.png" alt="Project 4" class="portfolio-piece-img">
-            </div>
-
+        <!-- Portfolio Grid Container (empty Initially, dynamically draws from JSON) -->
+        <div class="portfolio-grid" id="projects-container">
+            <!-- JavaScript inserts project items from JSON  file (projects.json) -->
         </div>
     </section>
+
     
     <footer>
         <!-- First Row: Logo + Name -->
@@ -103,7 +86,6 @@
         </div>
     </div>
     
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../assets/scripts/index.js"></script>
 </body>
 </html>
