@@ -3,133 +3,242 @@
         "comment": "Written by Augustina Vornehm"
     },
     
-
     {
-        "id": "cliffsunset",
-        "title": "Cliff Sunset",
-        "mainImage": "../../assets/images/portugal1.jpg",
-        "description": "A golden sunset descending over Portugal's coastal cliffs, capturing the dramatic textures of the sea against steep rocky formations.",
+        "id": "ice",
+        "title": "White & Blue Ice",
+        "mainImage": "../../assets/images/sweden/sweden1.png",
+        "description": "A moody morning in Sweden’s frozen glaciers bringing colorful ice.",
         "content": [
             {
-                "subtitle": "Serenity in Light",
-                "description": "Shot during golden hour, this image captures nature’s contrast between warmth and rough terrain. Ideal for tranquil spaces.",
-                "primaryImage": "../../assets/images/portugal1.jpg",
+                "subtitle": "Poster",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/sweden/sweden-poster-4.png",
                 "priceLink": "../../pages/contact.html"
             },
             {
-                "subtitle": "Cliff Formations",
-                "description": "Jagged formations shaped by centuries of ocean waves.",
-                "primaryImage": "../../assets/images/portugal2.jpg",
-                "priceLink": "../../pages/contact.html"
-            },
-            {
-                "subtitle": "Atlantic Blue",
-                "description": "The Atlantic Ocean meets the Iberian coast in a vibrant display.",
-                "primaryImage": "../../assets/images/portugal3.jpg",
-                "priceLink": "../../pages/contact.html"
-            },
-            {
-                "subtitle": "Shadows & Rocks",
-                "description": "Late shadows add depth to the coastline's silhouette.",
-                "primaryImage": "../../assets/images/portugal4.jpg",
-                "priceLink": "../../pages/contact.html"
-            }
-        ]
-    },
-
-    
-    {
-        "id": "forestmist",
-        "title": "Forest Mist",
-        "mainImage": "../../assets/images/sweden1.jpg",
-        "description": "A peaceful, foggy forest in Sweden, creating a mystic and muted atmosphere that feels timeless.",
-        "content": [
-            {
-                "subtitle": "Misty Canopy",
-                "description": "A thick fog blankets the pine trees, creating dreamlike visuals.",
-                "primaryImage": "../../assets/images/sweden1.jpg",
-                "priceLink": "../../pages/contact.html"
-            },
-            {
-                "subtitle": "Path Through Pines",
-                "description": "A trail winds through misty woods, inviting calm and reflection.",
-                "primaryImage": "../../assets/images/sweden2.jpg",
-                "priceLink": "../../pages/contact.html"
-            },
-            {
-                "subtitle": "Morning Dew",
-                "description": "Light glistens on dew-covered moss in early morning.",
-                "primaryImage": "../../assets/images/sweden3.jpg",
-                "priceLink": "../../pages/contact.html"
-            },
-            {
-                "subtitle": "Silhouettes",
-                "description": "Tall trees become silhouettes in a thick mist.",
-                "primaryImage": "../../assets/images/sweden4.jpg",
+                "subtitle": "Canvas",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/sweden/sweden-canvas-4.png",
                 "priceLink": "../../pages/contact.html"
             }
         ]
     },
     {
-        "id": "reindeertrack",
-        "title": "Reindeer Tracks",
-        "mainImage": "../../assets/images/finland1.jpg",
-        "description": "A minimalistic winter capture in Finland — snow trails that tell a quiet story.",
+        "id": "bisonherd",
+        "title": "Bison Herd",
+        "mainImage": "../../assets/images/sweden/sweden2.png",
+        "description": "A herd of bisons afer a long night of fighting a pack of wolfs.",
         "content": [
             {
-                "subtitle": "Silent Steps",
-                "description": "Fresh prints marking the snow in the early hours.",
-                "primaryImage": "../../assets/images/finland1.jpg",
+                "subtitle": "Poster",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/sweden/sweden-poster-1.png",
                 "priceLink": "../../pages/contact.html"
             },
             {
-                "subtitle": "Frozen Patterns",
-                "description": "Wind shapes the snow into art-like curves.",
-                "primaryImage": "../../assets/images/finland2.jpg",
-                "priceLink": "../../pages/contact.html"
-            },
-            {
-                "subtitle": "Northern White",
-                "description": "Endless snowfields under a grey northern sky.",
-                "primaryImage": "../../assets/images/finland3.jpg",
-                "priceLink": "../../pages/contact.html"
-            },
-            {
-                "subtitle": "Subarctic Silence",
-                "description": "Stillness and open space define the moment.",
-                "primaryImage": "../../assets/images/finland4.jpg",
+                "subtitle": "Canvas",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/sweden/sweden-canvas-1.png",
                 "priceLink": "../../pages/contact.html"
             }
         ]
     },
     {
-        "id": "fjordlight",
-        "title": "Fjord Light",
-        "mainImage": "../../assets/images/norway1.jpg",
-        "description": "Glacial light hitting the serene water of a fjord, reflecting Norway’s breathtaking beauty.",
+        "id": "Bison",
+        "title": "Bison Call",
+        "mainImage": "../../assets/images/sweden/sweden3.png",
+        "description": "A bison marking its territory by letting out a warning sound.",
         "content": [
             {
-                "subtitle": "Blue Reflection",
-                "description": "The still water mirrors the sky’s color palette.",
-                "primaryImage": "../../assets/images/norway1.jpg",
+                "subtitle": "Poster",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/sweden/sweden-poster-2.png",
                 "priceLink": "../../pages/contact.html"
             },
             {
-                "subtitle": "Mountains Meet Water",
-                "description": "Snow-capped peaks descend into the fjord’s calm surface.",
-                "primaryImage": "../../assets/images/norway2.jpg",
+                "subtitle": "Canvas",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/sweden/sweden-canvas-2.png",
+                "priceLink": "../../pages/contact.html"
+            }
+        ]
+    },
+    {
+        "id": "BisonFamily",
+        "title": "Bison Family",
+        "mainImage": "../../assets/images/sweden/sweden4.png",
+        "description": "A bison family after losing their calf to wolfs the night before.",
+        "content": [
+            {
+                "subtitle": "Poster",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/sweden/sweden-poster-3.png",
                 "priceLink": "../../pages/contact.html"
             },
             {
-                "subtitle": "Crystal Hour",
-                "description": "Golden rays bounce across glacial waters.",
-                "primaryImage": "../../assets/images/norway3.jpg",
+                "subtitle": "Canvas",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/sweden/sweden-canvas-3.png",
+                "priceLink": "../../pages/contact.html"
+            }
+        ]
+    },
+    {
+        "id": "mountainview",
+        "title": "Green & Blue Mountain View",
+        "mainImage": "../../assets/images/finland/finland1.png",
+        "description": "Sun kissed view on a deep green forrest with a blue river flowing.",
+        "content": [
+            {
+                "subtitle": "Poster",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/finland/finland-poster-2.png",
                 "priceLink": "../../pages/contact.html"
             },
             {
-                "subtitle": "Fjord Breath",
-                "description": "A low mist creeps across the water at dawn.",
-                "primaryImage": "../../assets/images/norway4.jpg",
+                "subtitle": "Canvas",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/finland/finland-canvas-2.png",
+                "priceLink": "../../pages/contact.html"
+            }
+        ]
+    },
+    {
+        "id": "bearandseaguls",
+        "title": "Bear & Seaguls",
+        "mainImage": "../../assets/images/finland/finland2.png",
+        "description": "Bear and seaguls at a pond in the middle of Lapland.",
+        "content": [
+            {
+                "subtitle": "Poster",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/finland/finland-poster-4.png",
+                "priceLink": "../../pages/contact.html"
+            },
+            {
+                "subtitle": "Canvas",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/finland/finland-canvas-4.png",
+                "priceLink": "../../pages/contact.html"
+            }
+        ]
+    },
+    {
+        "id": "bearcalling",
+        "title": "Bear calling",
+        "mainImage": "../../assets/images/finland/finland3.png",
+        "description": "Mother bear calling her cubs.",
+        "content": [
+            {
+                "subtitle": "Poster",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/finland/finland-poster-3.png",
+                "priceLink": "../../pages/contact.html"
+            },
+            {
+                "subtitle": "Canvas",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/finland/finland-canvas-3.png",
+                "priceLink": "../../pages/contact.html"
+            }
+        ]
+    },
+    {
+        "id": "owl",
+        "title": "Owl",
+        "mainImage": "../../assets/images/finland/finland4.png",
+        "description": "Fresh tracks on Finnish snow hinting at reindeer passing through.",
+        "content": [
+            {
+                "subtitle": "Poster",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/finland/finland-poster-1.png",
+                "priceLink": "../../pages/contact.html"
+            },
+            {
+                "subtitle": "Canvas",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/finland/finland-canvas-1.png",
+                "priceLink": "../../pages/contact.html"
+            }
+        ]
+    },
+    {
+        "id": "huskey",
+        "title": "Jawning Huskey",
+        "mainImage": "../../assets/images/norway/norway1.png",
+        "description": "A tired huskey jawning after a long day of sled riding.",
+        "content": [
+            {
+                "subtitle": "Poster",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/norway/norway-poster-3.png",
+                "priceLink": "../../pages/contact.html"
+            },
+            {
+                "subtitle": "Canvas",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/norway/norway-canvas-3.png",
+                "priceLink": "../../pages/contact.html"
+            }
+        ]
+    },
+    {
+        "id": "snowcabin",
+        "title": "Cabin in the snow",
+        "mainImage": "../../assets/images/norway/norway2.png",
+        "description": "Safe shelter in a snowstorm, barely visible in the nordlands of Norway.",
+        "content": [
+            {
+                "subtitle": "Poster",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/norway/norway-poster-2.png",
+                "priceLink": "../../pages/contact.html"
+            },
+            {
+                "subtitle": "Canvas",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/norway/norway-canvas-2.png",
+                "priceLink": "../../pages/contact.html"
+            }
+        ]
+    },
+    {
+        "id": "sled",
+        "title": "Dog Sled",
+        "mainImage": "../../assets/images/norway/norway3.png",
+        "description": "Sunlight dancing on the snow while on a huskey sled to bring food to shelters.",
+        "content": [
+            {
+                "subtitle": "Poster",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/norway/norway-poster-1.png",
+                "priceLink": "../../pages/contact.html"
+            },
+            {
+                "subtitle": "Canvas",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/norway/norway-canvas-1.png",
+                "priceLink": "../../pages/contact.html"
+            }
+        ]
+    },
+    {
+        "id": "tipi",
+        "title": "Tipi in the snow",
+        "mainImage": "../../assets/images/norway/norway4.png",
+        "description": "Bright, warming fire in our tipi in the snow.",
+        "content": [
+            {
+                "subtitle": "Poster",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/norway/norway-poster-4.png",
+                "priceLink": "../../pages/contact.html"
+            },
+            {
+                "subtitle": "Canvas",
+                "description": "request price and size",
+                "primaryImage": "../../assets/images/norway/norway-canvas-4.png",
                 "priceLink": "../../pages/contact.html"
             }
         ]
