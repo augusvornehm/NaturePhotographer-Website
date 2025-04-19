@@ -1734,7 +1734,6 @@ button .portfolio-piece-button {
 #casestudy-hero {
     display: flex;
     flex-direction: column;
-    height: 90vh;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -1746,36 +1745,35 @@ button .portfolio-piece-button {
     margin-top: 0 !important;
 }
 
-/* Image stays at the top */
+/*image stays at the top */
 .hero-portfolio .portfolio-content {
     width: 100%;
     position: relative;
-    z-index: 1; /* Ensures the image is behind text */
-
+    z-index: 1;
 }
 
 .hero-portfolio img {
     width: 100%;
-    height: 50vh; /* Image covers half of the section */
-    object-fit: cover; /* Ensures the image fills the area */
+    height: 60vh;
+    object-fit: cover; /*image fills area */
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0; /* Keeps the image in the background */
+    z-index: 0;
 }
 
-/* Text section now BELOW the image */
+/* Text section below image */
 .project-hero-text-container {
-    height: 40vh; /* Remaining space */
+    height: 40vh;
     width: 100%;
-    text-align: left;
+    text-align: center;
     padding: 2.5rem 10%;
     margin-bottom: 0;
     position: relative;
-    z-index: 2; /* Ensures text is above image */
+    z-index: 2; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers text vertically */
+    justify-content: center;
 }
 
 .hero-text-container h1 {
@@ -1783,13 +1781,27 @@ button .portfolio-piece-button {
 }
 
 .hero-text-container p {
-    margin-top: 0; /* Reset margin */
+    margin-top: 0;
+}
+
+.portfolio-image {
+    height: 60vh;
+    width: auto;
+}
+
+#project-image{
+    height: auto;
+    width: 100%;
+}
+/* Project header padding */
+#project-header {
+
+    text-align: center;
 }
 
 /* Responsive styles for smaller screens */
-@media screen and (max-width: 1425px) {
+@media screen and (max-width: 1225px) {
     #casestudy-hero {
-        height: auto;
         padding: 3rem 5%; /* Adjust padding for medium screens */
     }
 
@@ -1802,7 +1814,7 @@ button .portfolio-piece-button {
     }
 
     .hero-portfolio img {
-        width: 100%;
+        width: 75%; /* Adjust image size to 3/4 width for medium screens */
         height: 50vh; /* Adjust image height for medium screens */
         object-fit: cover;
         position: absolute;
@@ -1832,6 +1844,7 @@ button .portfolio-piece-button {
     .hero-text-container p {
         font-size: 1.25rem;
     }
+
     .hero-portfolio {
         padding-top: 5rem;
         padding: 0rem 10%;
@@ -1859,12 +1872,22 @@ button .portfolio-piece-button {
         max-width: 80%;
     }
 
+    .portfolio-image {
+        height: auto;
+        width: 80%;
+        align-items: center;
+        align-self: center;
+    }    
+
+    #project-image img{
+        height: auto;
+    }
+
     /* Hide back arrows */
     .back-arrow {
         display: none;
     }
 }
-
 
 /* For Phones (max-width: 480px) */
 @media screen and (max-width: 600px) {
@@ -1891,13 +1914,14 @@ button .portfolio-piece-button {
         display: block; /* Ensures the image behaves like a block element */
         margin: 0 auto; /* Centers the image */
     }
+
     #hero-title-number {
         font-size: 32rem;
         top: 0rem;
         left: 1%;
     }
 
-     .hero-portfolio {
+    .hero-portfolio {
         padding-top: 5rem;
         padding: 0rem 10%;
     }
@@ -1922,28 +1946,28 @@ button .portfolio-piece-button {
         top: 30% !important;
         right: 10% !important;
     }
+
+    .portfolio-image {
+        height: auto;
+        width: 80%;
+        align-items: center;
+        align-self: center;
+    }    
+
+    #project-image img{
+        height: auto;
+    }
+
     /* Hide back arrows */
     .back-arrow {
         display: none;
     }
 }
 
-/* Project details remain as they were */
+/* Project details case study */
 .project-detail {
     text-align: left;
     padding: 2.5rem 10%;
-}
-
-.portfolio-video {
-    width: auto;         
-    height: 60vh;       
-    object-fit: cover;   
-    overflow: hidden;   
-    display: block;  
-    position: relative; 
-    left: 50%;        
-    transform: translateX(-50%); /* Centers it perfectly */
-    padding-bottom: 5rem;
 }
 
 
@@ -1965,6 +1989,21 @@ button .portfolio-piece-button {
 
 .image-grid img:hover {
     transform: scale(1.1);
+}
+.image-item {
+    padding: 5% 0;
+    text-align: center;
+}
+
+.image-item a{
+    text-align: center;
+    color: #879A77;
+    padding: none;
+}
+
+.image-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 /* Popup Styles */

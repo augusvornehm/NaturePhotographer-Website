@@ -1,5 +1,4 @@
 //Written by Augustina Vornehm
-
 document.addEventListener("DOMContentLoaded", async function () {
     const params = new URLSearchParams(window.location.search);
     const projectId = params.get("id");
@@ -50,63 +49,36 @@ document.addEventListener("DOMContentLoaded", async function () {
                 sectionElement.appendChild(paragraph);
             }
 
-            // Check if there's a video
-            if (section.video) {
-                const videoElement = document.createElement("video");
-                videoElement.src = section.video;
-                videoElement.controls = true;
-                videoElement.classList.add("portfolio-video");
-                sectionElement.appendChild(videoElement);
-            }
-
             // Create a single-row grid for images (including pop-up functionality)
             if (section.primaryImage || section.secondaryImage || section.tertiaryImage) {
-                const imageRow = document.createElement("div");
-                imageRow.classList.add("image-row");
+                const galleryContainer = document.getElementById("project-gallery");
 
                 ["primaryImage", "secondaryImage", "tertiaryImage"].forEach(key => {
                     if (section[key]) {
+                        const imageItem = document.createElement("div");
+                        imageItem.classList.add("image-item");
+
                         const img = document.createElement("img");
                         img.src = section[key];
-                        img.alt = "Project image";
+                        img.alt = `${key} image`;
                         img.classList.add("portfolio-image");
                         img.dataset.popup = "true"; // Mark for pop-up functionality
-                        imageRow.appendChild(img);
+                        imageItem.appendChild(img);
+
+                        // Create a subtitle and link for price inquiry
+                        const subtitle = document.createElement("p");
+                        subtitle.classList.add("image-subtitle");
+                        subtitle.innerText = key === "primaryImage" ? "Poster" : "Canvas"; // Display Poster or Canvas
+                        imageItem.appendChild(subtitle);
+
+                        const priceLink = document.createElement("a");
+                        priceLink.href = "../../pages/contact.html";
+                        priceLink.innerText = "Request price and size";
+                        imageItem.appendChild(priceLink);
+
+                        galleryContainer.appendChild(imageItem);
                     }
                 });
-
-                sectionElement.appendChild(imageRow);
-            }
-
-            // Handle images array (images with links)
-            if (section.images && Array.isArray(section.images)) {
-                const imageRow = document.createElement("div");
-                imageRow.classList.add("image-row");
-
-                section.images.forEach(imageData => {
-                    if (imageData.src) {
-                        const img = document.createElement("img");
-                        img.src = imageData.src;
-                        img.alt = imageData.alt || "Project image";
-                        img.classList.add("portfolio-image");
-
-                        // If there's a link (and it's not null), open in a new tab
-                        if (imageData.link && imageData.link !== "null") {
-                            const link = document.createElement("a");
-                            link.href = imageData.link;
-                            link.target = "_blank";
-                            link.rel = "noopener noreferrer";
-                            link.appendChild(img);
-                            imageRow.appendChild(link);
-                        } else {
-                            // If no link or null link, open in pop-up
-                            img.dataset.popup = "true"; // Mark for pop-up functionality
-                            imageRow.appendChild(img);
-                        }
-                    }
-                });
-
-                sectionElement.appendChild(imageRow);
             }
 
             contentContainer.appendChild(sectionElement);
