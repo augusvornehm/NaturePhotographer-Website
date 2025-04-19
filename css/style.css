@@ -83,15 +83,15 @@ nav ul li a:hover::after {
     z-index: 10000;
 }
 
-/* Default: Hide the nav menu off-screen */
+/*Hide the nav menu off-screen*/
 .menu-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%; /*full screen width */
     height: 100%; /*full screen height */
-    background-color: black; /* Solid black background */
-    color: #000; /* Menu text color */
+    background-color: #879A77; /* Solid black background */
+    color: #DDD6CE; /* Menu text color */
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Align to the top left */
@@ -103,7 +103,7 @@ nav ul li a:hover::after {
     z-index: 9999; /* Ensure it is on top */
 }
 
-/* Show the menu when burger menu is clicked */
+/*show  menu when burger menu is clicked */
 .menu-container.show-menu {
     opacity: 1; /* Make the menu visible */
     visibility: visible; /* Allow interaction */
@@ -142,7 +142,6 @@ nav ul li a:hover::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Darkened background behind menu */
     z-index: -1; /* Behind the menu */
 }
 
@@ -955,7 +954,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
     margin: 0;
 }
 
@@ -1007,7 +1005,7 @@ footer {
 
 .hero-menu {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 10%;
     transform: translateY(-50%);
     width: 35%;
@@ -1830,7 +1828,7 @@ button .portfolio-piece-button {
 /* Hero image container */
 .hero-portfolio {
     width: 100%;
-    height: 60vh;
+    height: 90vh;
     position: relative;
     overflow: hidden;
 }
@@ -1944,9 +1942,7 @@ button .portfolio-piece-button {
 
 /* Tablets and smaller */
 @media screen and (max-width: 1024px) {
-    .hero-portfolio {
-        height: 100vh;
-    }
+
 
     .project-hero-text-container {
         padding: 3rem 5%;
@@ -1964,7 +1960,6 @@ button .portfolio-piece-button {
 /* Phones and smaller devices */
 @media screen and (max-width: 600px) {
     .hero-portfolio {
-        height: 40vh;
         position: relative;
     }
 
@@ -1985,9 +1980,6 @@ button .portfolio-piece-button {
         position: relative;
     }
 
-    .hero-menu {
-        display: none;
-    }
 
     .image-item {
         width: 100%;
