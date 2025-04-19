@@ -373,21 +373,6 @@ button:hover {
 }
 
 
-
-/*tablet layout - 2 Columns, 3 Rows */
-@media screen and (max-width: 1425px) {
-    .content-right {
-       width: 0;
-    }
-}
-
-/* phone layout - 1 Column, 6 Rows */
-@media screen and (max-width: 600px) {
-    .content-right {
-       width: 0;
-    }
-}
-
 /*hero section*/
 
 #index {
@@ -398,91 +383,7 @@ button:hover {
     margin-left: 0;
 }
 
-/*about section*/
 
-
-
-.skills {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    list-style: none;
-    margin: 0;
-    font-size: 1.15rem;
-}
-
-.skills li {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
-}
-
-.education-container {
-    display: flex; /*two columns */
-    padding: 0;
-    margin-top: 5rem;
-    width: 100%;
-}
-
-.cap {
-    display: flex;
-    flex-direction: column; /*stack vertically*/
-    justify-content: flex-start; 
-    margin-right: 6rem; /*space between cap img and edu list*/
-    align-self: center; /*center horizontally*/
-}
-
-.cap img {
-    width: 150px;
-    height: auto;
-}
-
-.education {
-    display: flex;
-    flex-direction: column; /* edu items vertically */
-    list-style: none; /*no bullet points*/
-    margin: 0;
-    padding: 0;
-}
-
-.education li {
-    margin-bottom: 1rem;
-}
-
-.education_text {
-    font-size: 1rem;
-}
-
-.education_text strong {
-    font-weight: bold;
-}
-
-
-@media screen and (max-width: 1425px) {
-    .education-container {
-        flex-direction: row; /* Keep columns side by side on tablet */
-        align-items: center; /* Center the content vertically */
-    }
-
-    .cap {
-        margin-right: 2rem; /* Adjust spacing between cap image and education */
-        width: 50%;
-    }
-    
-    .cap img {
-        height: 15rem;
-        width: 15rem;
-    }
-
-    .education {
-        margin-left: auto; /* Push the education section to the right */
-        text-align: left; /* Ensure the text is left aligned */
-    }
-
-    .education li {
-        margin-bottom: 1.5rem; /* Add some extra spacing between list items */
-    }
-}
 
 
 /* Mobile Layout - Adjustments for screens up to 768px */
@@ -694,100 +595,6 @@ img {
 }
 
   
-/* Software skills section */
-
-
-.software {
-    z-index: 1000;
-}
-
-
-/* Project Section*/
-.projects {
-  width: 100vw;
-  overflow: hidden;
-  padding: 5rem 0;
-  position: relative;
-}
-
-.projects h2 {
-    align-items: left;
-    padding: 0 10%;
-    max-width: 100vw;
-}
-
-.projects span {
-    padding: 0 10%;
-}
-
-.projects-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-}
-
-.projects-container {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  padding: 2rem 40%; /* more padding to allow more room for scrolling to end/beginning*/
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  justify-content: center;
-  position: relative;
-  margin: 0 auto;
-  width: calc(100% + 80%); /* More space for the scroll to end/beginning*/
-  height: 100wv;
-}
-
-    /*hide ugly scrollbar in chrome, safari */
-.projects-container::-webkit-scrollbar {
-  display: none;
-}
-
-.project-box {
-  flex: 0 0 20rem;
-  height: 25rem;
-  background-color: #000;
-  color: black;
-  ;
-  border-radius: 2.5rem;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-sizing: border-box;
-  border-left: 5px solid #DDD6CE;
-  scroll-snap-align: center;
-  transform: scale(0.9);
-}
-
-.project-box.active {
-  transform: scale(1);
-}
-
-.project-box:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.project-box img {
-  max-width: 100%;
-  height: 35%;
-}
-
-.project-box-start {
-    color: transparent;
-    background-color: transparent ;
-}
-
-    /*extra margin to make edge boxes partially visible*/
-.project-box:first-child {
-  margin-left: -15rem; /*increased margin for first box*/
-}
-
-.project-box:last-child {
-  margin-right: -15rem; /* increased margin last box*/
-}
 
     /*arrow button style*/
 .arrow-btn {
@@ -1201,17 +1008,20 @@ footer {
     }
 
     .hero-title {
-        font-size: 10rem !important;
+        font-size: 7rem !important;
+        left: 2% !important;
         top: 5rem !important;
     }
     
      #hero-title-outline-1 {
-        font-size: 9rem !important;
-        top: 5rem !important;
+        font-size: 6rem !important;
+        left: 4% !important;
+        top: 6rem !important;
     }
     
     #hero-title-outline-2 {
-        font-size: 9rem !important;
+        font-size: 6rem !important;
+        left: 1% !important;
         top: 11rem !important;
     }
 
@@ -1239,7 +1049,7 @@ footer {
     .hero-portfolio {
         align-items: left;
         padding-top: 5rem;
-        padding: 0rem 10%;
+        padding: 0rem 5%;
     }
     
     #hero-title-outline-1, 
@@ -1248,12 +1058,14 @@ footer {
     }
 
     .hero-title {
-        font-size: 5rem !important;
-        top: 5rem !important;
+        font-size: 3.5rem !important;
+        left: 2% !important;
+        top: 5.5rem !important;
     }
     
      #hero-title-outline-1 {
-        font-size: 4rem !important;
+        font-size: 3.5rem !important;
+        left: 4% !important;
         top: 5rem !important;
     }
     
@@ -1865,6 +1677,7 @@ button .portfolio-piece-button {
     .portfolio-grid {
         grid-template-columns: repeat(2, 1fr); /* 3 columns */
         grid-template-rows: repeat(2, auto); /* 2 rows */
+        align-items: center;
     }
 }
 
@@ -1873,6 +1686,25 @@ button .portfolio-piece-button {
     .portfolio-grid {
         grid-template-columns: repeat(1, 1fr); /* 2 columns */
         grid-template-rows: repeat(4, auto); /* 3 rows */
+        align-items: center;
+    }
+    .portfolio-item {
+        position: relative;
+        display: block;
+        width: 100%;
+        aspect-ratio: 1 / 1; 
+        overflow: hidden;
+        align-items: center;
+        align-self: center;
+    }
+    
+    /* Image styling */
+    .portfolio-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease, filter 0.3s ease;
+        z-index: 1;
     }
 }
 
@@ -1881,6 +1713,7 @@ button .portfolio-piece-button {
     .portfolio-grid {
         grid-template-columns: 1fr; /* 1 column */
         grid-template-rows: repeat(6, auto); /* 6 rows */
+        align-items: center;
     }
 }
 
