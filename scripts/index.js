@@ -1,5 +1,19 @@
 //Written by Augustina Vornehm
 
+
+//buerger menu
+
+document.addEventListener("DOMContentLoaded", function () {
+  const burgerMenu = document.getElementById("burgerMenu");
+  const menuContainer = document.querySelector(".menu-container");
+
+  burgerMenu.addEventListener("click", function () {
+      menuContainer.classList.toggle("show-menu");
+  });
+});
+
+
+
 //submit contact form
 
 document.getElementById("homepage-contact-form").addEventListener("submit", function (e) {

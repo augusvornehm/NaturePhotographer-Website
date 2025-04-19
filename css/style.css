@@ -90,8 +90,8 @@ nav ul li a:hover::after {
     left: 0;
     width: 100%; /*full screen width */
     height: 100%; /*full screen height */
-    background-color: black; /* Solid black background */
-    color: #000; /* Menu text color */
+    background-color: #DDD6CE; /* Solid black background */
+    color: #fff; /* Menu text color */
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Align to the top left */
@@ -142,7 +142,6 @@ nav ul li a:hover::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Darkened background behind menu */
     z-index: -1; /* Behind the menu */
 }
 
@@ -163,14 +162,16 @@ nav ul li a:hover::after {
 
     /* Show the burger menu icon */
     
-    
+    .burger-menu {
+        display: block;
+    }
 
     /* Style the burger icon */
     .burger-icon {
         display: block;
         width: 25px;
         height: 3px;
-        background-color: #333;
+        background-color: #fff;
         margin: 5px 0;
     }
 
