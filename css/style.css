@@ -206,6 +206,7 @@ h2 {
     font-size: 3rem;
     color: #3c3b3b;
     margin-bottom: 1.5rem;
+    text-align: center;
     margin-top: 1%;
 }
 
@@ -311,6 +312,12 @@ button:hover {
     top: -5rem;
 }  
 
+@media screen and (max-width: 600px) {
+    #home.hero {
+        top: -15rem;
+        height: 110vh;
+    }
+}
 #home.hero::before {
     content: "";
     position: absolute;
@@ -911,6 +918,7 @@ footer {
     .footer-logo {
         margin-top: 0; /* Adjust logo's margin to stay inside the footer */
         padding-top: 0; /* Ensure no overflow outside the footer */
+        padding: 5%;
     }
     
     /* Burger Menu */
