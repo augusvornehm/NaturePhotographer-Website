@@ -1402,8 +1402,7 @@ footer {
 }
 
 
-
-/* About Section */
+/* About Section - Adam Ralph */
 .about-my-work {
     display: flex;
     flex-direction: row;
@@ -1428,8 +1427,8 @@ footer {
     line-height: 1.6;
 }
 
-/*about page image*/
 
+/*about page image Adam Ralph*/
 .polaroid {
     background-color: #000;
     padding: 1rem 1rem 2rem;
@@ -1448,16 +1447,6 @@ footer {
 .polaroid img:hover {
     transform: scale(1.05);
 }
-
-
-
-/* .about-my-work-image img {
-    width: 500px;
-    height: auto;
-    border: 5px solid #ddd;
-    border-radius: 6px;
-    
-} */
 
 
 /* Media Queries for Mobile Devices */
@@ -2136,13 +2125,8 @@ button .portfolio-piece-button {
 }
 
 
-
-/* Written by Adam Ralph*/
-
-
-
 /* contct page*/
-
+/* Written by Adam Ralph*/
 .contact-page {
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
     url(../assets/images/background-img.jpg);
@@ -2204,8 +2188,6 @@ button .portfolio-piece-button {
 }
 
 .contact-page-form textarea {
-    /* resize: vertical;
-    min-height: 120px; */
     height: 100px;
 }
 
@@ -2256,4 +2238,3 @@ button .portfolio-piece-button {
     appearance: none;
     cursor: pointer;
 }
-
