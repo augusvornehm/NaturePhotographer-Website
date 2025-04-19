@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0; /*needs to be 0 for project section, all others 5rem 10%*/
     box-sizing: border-box;
@@ -192,7 +192,7 @@ body {
     line-height: 1.5;
 }
 
-/* Apply Tienne to h1 */
+/* Tienne to h1 */
 h1 {
     font-family: 'Tienne', serif;
     font-size: 6rem;
@@ -201,7 +201,7 @@ h1 {
 }
 
 
-/* Apply Tienne to h2 */
+/* Tienne to h2 */
 h2 {
     font-family: 'Tienne', serif;
     font-weight: 500;
