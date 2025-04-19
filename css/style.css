@@ -690,134 +690,6 @@ img {
     }
 }
 
-  
-/* Software skills section */
-
-
-.software {
-    z-index: 1000;
-}
-
-
-/* Project Section*/
-.projects {
-  width: 100vw;
-  overflow: hidden;
-  padding: 5rem 0;
-  position: relative;
-}
-
-.projects h2 {
-    /* align-items: left; */
-    padding: 0 10%;
-    max-width: 100vw;
-}
-
-.projects span {
-    padding: 0 10%;
-}
-
-.projects-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-}
-
-.projects-container {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  padding: 2rem 40%; /* more padding to allow more room for scrolling to end/beginning*/
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  justify-content: center;
-  position: relative;
-  margin: 0 auto;
-  width: calc(100% + 80%); /* More space for the scroll to end/beginning*/
-  /* height: 100wv; */
-}
-
-    /*hide ugly scrollbar in chrome, safari */
-.projects-container::-webkit-scrollbar {
-  display: none;
-}
-
-.project-box {
-  flex: 0 0 20rem;
-  height: 25rem;
-  background-color: #000;
-  color: black;
-  ;
-  border-radius: 2.5rem;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-sizing: border-box;
-  border-left: 5px solid #DDD6CE;
-  scroll-snap-align: center;
-  transform: scale(0.9);
-}
-
-.project-box.active {
-  transform: scale(1);
-}
-
-.project-box:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.project-box img {
-  max-width: 100%;
-  height: 35%;
-}
-
-.project-box-start {
-    color: transparent;
-    background-color: transparent ;
-}
-
-    /*extra margin to make edge boxes partially visible*/
-.project-box:first-child {
-  margin-left: -15rem; /*increased margin for first box*/
-}
-
-.project-box:last-child {
-  margin-right: -15rem; /* increased margin last box*/
-}
-
-    /*arrow button style*/
-.arrow-btn {
-  position: absolute;
-  bottom: 0;
-  background-color: #879A77;
-  padding: 1rem 1.2rem;
-  border-radius: 100%;
-  border: none;
-  z-index: 10;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-  font-size: 2rem;
-  color: #000;
-}
-
-.arrow-btn:hover {
-  background-color: #DDD6CE;
-}
-
-.arrow-btn:active {
-    transform: scale(0.9);
-}
-
-.left-arrow {
-  left: 42%; /* Position to the left */
-}
-
-.right-arrow {
-  right: 42%; /* Position to the right */
-}
-
-
 
 /* Footer */
 
@@ -1069,8 +941,6 @@ footer {
 
 
 }
-
-
 
 
 /*portfolio*/
@@ -1333,6 +1203,7 @@ footer {
         grid-template-rows: repeat(6, auto); /* 6 rows */
     }
 }
+
 
 
 /* Popup styling */
@@ -1692,7 +1563,7 @@ button.cta-button:hover {
 }
 
 /* Tablets (landscape & portrait) */
-@media screen and (max-width: 1224px) {
+@media screen and (max-width: 2224px) {
     #title-tour .hero-title-portfolio-subpage .hero-main {
         font-size: 12rem;
         top: 25%;
@@ -1770,9 +1641,7 @@ button.cta-button:hover {
 .back-arrow:hover svg {
     transform: scale(1.2); /*larger, no shift*/
     stroke: #879A77; 
-}
-
-/* Portfolio section styling */
+}/* Portfolio section styling */
 .portfolio {
     text-align: center;
     padding: 5rem 10%;
@@ -1780,25 +1649,29 @@ button.cta-button:hover {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for desktop */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
     gap: 2rem;
     margin-top: 2rem;
 }
 
+/* Portfolio item box with 3:4 aspect ratio */
 .portfolio-item {
     position: relative;
     display: block;
-    height: 50vh;
-    width: auto;
-    aspect-ratio: 4 / 3; 
+    width: 100%;
+    padding-bottom: 133.33%; /* Maintain the 3:4 aspect ratio (height = 75% of width) */
     overflow: hidden;
 }
 
 /* Image styling */
 .portfolio-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ensure the image covers the container */
     transition: transform 0.3s ease, filter 0.3s ease;
     z-index: 1;
 }
@@ -1809,38 +1682,14 @@ button.cta-button:hover {
     filter: brightness(0) contrast(100%);
 }
 
-@media screen and (max-width: 768px) {
-    .portfolio-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, auto);
-        gap: 2rem;
-    }
-
-    .portfolio-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        aspect-ratio: auto;
-        width: 100%;
-    }
-
-    .portfolio-item img {
-        width: 95%; /* Adjusted width for bigger images */
-        height: auto;
-        object-fit: cover;
-    }
-}
-
-/* Overlay for text */
+/* Overlay styling */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.4); /* Slight dark background */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1852,14 +1701,14 @@ button.cta-button:hover {
     z-index: 2;
 }
 
-.portfolio-item:hover .overlay {
+.portfolio-piece-item:hover .overlay {
     opacity: 1;
     visibility: visible;
 }
 
 .overlay h3,
 .overlay p {
-    color: #879A77;
+    color: #fff; /* White text for visibility */
     margin: 0;
 }
 
@@ -1872,6 +1721,43 @@ button.cta-button:hover {
     font-size: 1rem;
 }
 
+/* Mobile/Tablets (One image per row) */
+@media screen and (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+        grid-template-rows: repeat(4, auto); /* 4 rows for mobile */
+        gap: 1rem; /* Adjust the gap for mobile */
+    }
+
+    .portfolio-item {
+        padding-bottom: 133.33%; /* Keep aspect ratio of 3:4 */
+    }
+
+    .portfolio-item img {
+        width: 100%; /* Use 100% width for images on mobile */
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Larger screens (Desktop) */
+@media screen and (min-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for desktop */
+        grid-template-rows: repeat(2, auto); /* 2 rows for desktop */
+        gap: 2rem; /* Increase gap between items */
+    }
+
+    .portfolio-item {
+        padding-bottom: 133.33%; /* 3:4 ratio */
+    }
+
+    .portfolio-item img {
+        width: 100%; /* Full width images */
+        height: 100%;
+        object-fit: cover;
+    }
+}
 
 /* Button */
 button .portfolio-piece-button {
@@ -1931,7 +1817,7 @@ button .portfolio-piece-button {
     position: relative;
 }
 
-/*Case study*/
+/* Case Study Hero */
 #casestudy-hero {
     display: flex;
     flex-direction: column;
@@ -1979,7 +1865,6 @@ button .portfolio-piece-button {
     box-sizing: border-box;
 }
 
-
 .hero-text-container {
     max-width: 900px;
 }
@@ -2018,26 +1903,44 @@ button .portfolio-piece-button {
     stroke: #3c3b3b;
 }
 
-
+/* Image item styling */
 .image-item {
-    text-align: center;
+    text-align: center; 
     padding: 5% 0;
+    width: 80%;
+    display: block;
+    margin: 0 auto; 
 }
 
-.image-item a {
+.image-item img {
+    width: 100%; 
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+.image-item a{
     color: #879A77;
-    text-decoration: none;
 }
 
-#project-header{
+/* Project Gallery container */
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adds space between items */
+    margin-top: 20px;
+}
+
+/* Case Study Project Header */
+#project-header {
     text-align: center;
 }
 
+/* Project Details */
 .project-detail {
     text-align: left;
     padding: 2.5rem 10%;
 }
-
 
 /* Tablets and smaller */
 @media screen and (max-width: 1024px) {
@@ -2058,6 +1961,7 @@ button .portfolio-piece-button {
     }
 }
 
+/* Phones and smaller devices */
 @media screen and (max-width: 600px) {
     .hero-portfolio {
         height: 40vh;
@@ -2067,7 +1971,7 @@ button .portfolio-piece-button {
     .project-hero-text-container {
         padding: 2rem 5%;
         position: relative;
-        z-index: 10; /* Make sure this stacks above nav/menu */
+        z-index: 10; 
     }
 
     .hero-text-container h1,
@@ -2076,7 +1980,7 @@ button .portfolio-piece-button {
         z-index: 10;
     }
 
-    nav, .navbar { /* or whatever your menu class is */
+    nav, .navbar { 
         z-index: 5;
         position: relative;
     }
@@ -2085,15 +1989,20 @@ button .portfolio-piece-button {
         display: none;
     }
 
+    .image-item {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    /* Keep the images centered even on mobile */
+    .image-item img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+    }
 }
-
-
-/* Project details remain as they were */
-.project-detail {
-    text-align: left;
-    padding: 2.5rem 10%;
-}
-
 /*popup*/
 .image-grid {
     display: flex;
@@ -2102,7 +2011,7 @@ button .portfolio-piece-button {
 }
 
 .image-grid img {
-    width: 100px;  /* Adjust square size */
+    width: 100px; 
     height: 100px;
     object-fit: cover;
     cursor: pointer;
@@ -2124,7 +2033,7 @@ button .portfolio-piece-button {
 }
 
 .image-row img {
-    width: 50vh; /* Increased image size */
+    width: 50vh;
     height: 50vh;
     object-fit: cover;
     cursor: pointer;
